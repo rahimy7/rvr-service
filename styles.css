@@ -493,34 +493,61 @@ section {
 /* Privacy and WhatsApp Consent Styles */
 .privacy-consent,
 .whatsapp-consent {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    background: var(--background-light);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--border-color);
 }
 
-.checkbox-container {
+.privacy-notice {
+    background: #e3f2fd;
+    border: 2px solid #2196f3;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.privacy-notice strong {
+    color: var(--primary-color);
+}
+
+.checkbox-wrapper {
     display: flex;
     align-items: flex-start;
     gap: 0.75rem;
-    cursor: pointer;
-    font-size: 0.9rem;
-    line-height: 1.5;
 }
 
-.checkbox-container input[type="checkbox"] {
-    width: auto;
+.checkbox-wrapper input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
     margin: 0;
-    transform: scale(1.2);
     cursor: pointer;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.checkbox-label {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    font-weight: normal;
+    margin-bottom: 0;
 }
 
 .checkbox-text {
-    color: var(--text-secondary);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    line-height: 1.5;
     flex: 1;
 }
 
 .privacy-link {
     color: var(--primary-color);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     transition: var(--transition);
 }
 
@@ -529,40 +556,69 @@ section {
     text-decoration: underline;
 }
 
-/* Custom Checkbox Styles (Alternative) */
-.checkbox-container input[type="checkbox"] {
-    appearance: none;
-    width: 18px;
-    height: 18px;
-    border: 2px solid var(--border-color);
-    border-radius: 3px;
-    background: var(--secondary-color);
-    cursor: pointer;
-    position: relative;
-    margin: 0;
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-.checkbox-container input[type="checkbox"]:checked {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.checkbox-container input[type="checkbox"]:checked::after {
-    content: '✓';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 12px;
+.required-asterisk {
+    color: #dc3545;
     font-weight: bold;
+    margin-left: 2px;
 }
 
-.checkbox-container input[type="checkbox"]:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px hsla(220, 70%, 25%, 0.1);
+/* Privacy Banner */
+.privacy-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    z-index: 1001;
+    box-shadow: var(--shadow-heavy);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.privacy-banner.show {
+    transform: translateY(0);
+}
+
+.privacy-banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.privacy-banner-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.banner-privacy-link {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.banner-privacy-link:hover {
+    color: #e3f2fd;
+}
+
+.privacy-banner-close {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.privacy-banner-close:hover {
+    background: hsla(0, 0%, 100%, 0.1);
 }
 
 /* Footer */
@@ -627,6 +683,24 @@ section {
 .footer-bottom p {
     color: hsla(0, 0%, 100%, 0.8);
     margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.privacy-footer-link {
+    margin-top: 0.5rem;
+}
+
+.footer-privacy-link {
+    color: hsla(0, 0%, 100%, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    margin: 0 0.5rem;
+}
+
+.footer-privacy-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -728,7 +802,18 @@ section {
     .checkbox-container {
         font-size: 0.85rem;
     }
+    
+    .privacy-banner-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .privacy-banner-content p {
+        font-size: 0.85rem;
+    }
 }
+
 
 @media (max-width: 480px) {
     .hero-buttons {

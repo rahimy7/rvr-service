@@ -38,6 +38,15 @@
         </nav>
     </header>
 
+    <!-- Privacy Banner -->
+    <div id="privacy-banner" class="privacy-banner">
+        <div class="privacy-banner-content">
+            <p>🔒 Respetamos su privacidad. Utilizamos cookies y procesamos datos según nuestra 
+            <a href="privacy-policy.html" class="banner-privacy-link">Política de Privacidad</a>.</p>
+            <button id="close-privacy-banner" class="privacy-banner-close">✕</button>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main>
         <!-- Inicio Section -->
@@ -298,27 +307,34 @@
                                 <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
                             </div>
                             
+                            <!-- Privacy Notice Box -->
+                            <div class="privacy-notice">
+                                <p><strong>Protección de Datos:</strong> Sus datos personales serán tratados conforme a nuestra Política de Privacidad. Al enviar este formulario, usted consiente el procesamiento de sus datos para los fines descritos.</p>
+                            </div>
+                            
                             <!-- Privacy Consent -->
                             <div class="form-group privacy-consent">
-                                <label class="checkbox-container">
+                                <div class="checkbox-wrapper">
                                     <input type="checkbox" id="privacy-consent" name="privacy-consent" required>
-                                    <span class="checkmark"></span>
-                                    <span class="checkbox-text">
-                                        He leído y acepto la <a href="privacy-policy.html" target="_blank" class="privacy-link">Política de Privacidad</a> 
-                                        y consiento el procesamiento de mis datos personales para los fines descritos.
-                                    </span>
-                                </label>
+                                    <label for="privacy-consent" class="checkbox-label">
+                                        <span class="checkbox-text">
+                                            ✓ He leído y acepto la <a href="privacy-policy.html" target="_blank" class="privacy-link"><strong>Política de Privacidad</strong></a> 
+                                            y consiento el procesamiento de mis datos personales para los fines descritos. <span class="required-asterisk">*</span>
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
                             
                             <!-- WhatsApp Consent -->
                             <div class="form-group whatsapp-consent">
-                                <label class="checkbox-container">
+                                <div class="checkbox-wrapper">
                                     <input type="checkbox" id="whatsapp-consent" name="whatsapp-consent">
-                                    <span class="checkmark"></span>
-                                    <span class="checkbox-text">
-                                        Acepto recibir comunicaciones a través de WhatsApp para coordinar servicios y proporcionar soporte.
-                                    </span>
-                                </label>
+                                    <label for="whatsapp-consent" class="checkbox-label">
+                                        <span class="checkbox-text">
+                                            📱 Acepto recibir comunicaciones a través de WhatsApp para coordinar servicios y proporcionar soporte técnico. (Opcional)
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
                             
                             <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
@@ -358,6 +374,10 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 RVR Service. Todos los derechos reservados.</p>
+                <p class="privacy-footer-link">
+                    <a href="privacy-policy.html" class="footer-privacy-link">📋 Ver Política de Privacidad</a> | 
+                    <a href="#contacto" class="footer-privacy-link">📞 Contacto</a>
+                </p>
             </div>
         </div>
     </footer>
@@ -378,20 +398,59 @@
             navMenu.classList.remove('active');
         }));
 
+        // Privacy Banner functionality
+        const privacyBanner = document.getElementById('privacy-banner');
+        const closeBannerBtn = document.getElementById('close-privacy-banner');
+
+        // Show banner after 2 seconds if not previously closed
+        setTimeout(() => {
+            if (!localStorage.getItem('privacy-banner-closed')) {
+                privacyBanner.classList.add('show');
+            }
+        }, 2000);
+
+        // Close banner functionality
+        closeBannerBtn.addEventListener('click', () => {
+            privacyBanner.classList.remove('show');
+            localStorage.setItem('privacy-banner-closed', 'true');
+        });
+
         // Form validation with privacy consent
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             const privacyConsent = document.getElementById('privacy-consent');
             
             if (!privacyConsent.checked) {
                 e.preventDefault();
-                alert('Debe aceptar la Política de Privacidad para continuar.');
+                alert('❌ Debe aceptar la Política de Privacidad para continuar.');
+                // Scroll to privacy consent
+                privacyConsent.closest('.privacy-consent').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+                // Highlight the privacy consent section
+                privacyConsent.closest('.privacy-consent').style.border = '3px solid #dc3545';
+                setTimeout(() => {
+                    privacyConsent.closest('.privacy-consent').style.border = '2px solid var(--primary-color)';
+                }, 3000);
                 return false;
             }
+            
+            // Get WhatsApp consent status
+            const whatsappConsent = document.getElementById('whatsapp-consent').checked;
             
             // Here you would typically send the form data to your server
             // For now, we'll just show a success message
             e.preventDefault();
-            alert('¡Mensaje enviado exitosamente! Nos pondremos en contacto contigo pronto.');
+            
+            let message = '✅ ¡Mensaje enviado exitosamente! Nos pondremos en contacto contigo pronto.';
+            if (whatsappConsent) {
+                message += '\n📱 También te contactaremos por WhatsApp según tu preferencia.';
+            }
+            
+            alert(message);
+            
+            // Reset form
+            this.reset();
         });
 
         // Smooth scrolling for navigation links
@@ -405,6 +464,22 @@
                         block: 'start'
                     });
                 }
+            });
+        });
+
+        // Highlight privacy policy links on hover
+        document.querySelectorAll('.privacy-link').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.background = 'var(--primary-color)';
+                this.style.color = 'white';
+                this.style.padding = '2px 6px';
+                this.style.borderRadius = '4px';
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                this.style.background = 'transparent';
+                this.style.color = 'var(--primary-color)';
+                this.style.padding = '0';
             });
         });
     </script>
