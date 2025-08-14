@@ -96,12 +96,6 @@
                             en el mercado. Nos especializamos en brindar soluciones completas que abarcan 
                             desde servicios técnicos tradicionales hasta el desarrollo de tecnología avanzada.
                         </p>
-                        <h3>Nuestra Misión</h3>
-                        <p>
-                            Proporcionar servicios de la más alta calidad con un enfoque profesional, 
-                            utilizando las mejores prácticas y tecnologías disponibles para garantizar 
-                            la satisfacción total de nuestros clientes.
-                        </p>
                         <h3>Nuestros Valores</h3>
                         <ul class="values-list">
                             <li>Calidad y excelencia en cada proyecto</li>
@@ -280,7 +274,7 @@
                     </div>
                     <div class="contact-form">
                         <h3>Envíanos un Mensaje</h3>
-                        <form class="form">
+                        <form class="form" id="contactForm">
                             <div class="form-group">
                                 <label for="name">Nombre Completo</label>
                                 <input type="text" id="name" name="name" required>
@@ -303,6 +297,30 @@
                                 <label for="message">Mensaje</label>
                                 <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
                             </div>
+                            
+                            <!-- Privacy Consent -->
+                            <div class="form-group privacy-consent">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="privacy-consent" name="privacy-consent" required>
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">
+                                        He leído y acepto la <a href="privacy-policy.html" target="_blank" class="privacy-link">Política de Privacidad</a> 
+                                        y consiento el procesamiento de mis datos personales para los fines descritos.
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <!-- WhatsApp Consent -->
+                            <div class="form-group whatsapp-consent">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="whatsapp-consent" name="whatsapp-consent">
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">
+                                        Acepto recibir comunicaciones a través de WhatsApp para coordinar servicios y proporcionar soporte.
+                                    </span>
+                                </label>
+                            </div>
+                            
                             <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                         </form>
                     </div>
@@ -333,6 +351,7 @@
                         <ul>
                             <li><a href="#nosotros">Sobre Nosotros</a></li>
                             <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="privacy-policy.html">Política de Privacidad</a></li>
                         </ul>
                     </div>
                 </div>
@@ -342,5 +361,58 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Form validation with privacy consent
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            const privacyConsent = document.getElementById('privacy-consent');
+            
+            if (!privacyConsent.checked) {
+                e.preventDefault();
+                alert('Debe aceptar la Política de Privacidad para continuar.');
+                return false;
+            }
+            
+            // Here you would typically send the form data to your server
+            // For now, we'll just show a success message
+            e.preventDefault();
+            alert('¡Mensaje enviado exitosamente! Nos pondremos en contacto contigo pronto.');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
-</html>
+</html>uestra Misión</h3>
+                        <p>
+                            Proporcionar servicios de la más alta calidad con un enfoque profesional, 
+                            utilizando las mejores prácticas y tecnologías disponibles para garantizar 
+                            la satisfacción total de nuestros clientes.
+                        </p>
+                        <h3>N
