@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web Profesional | RVR Service - React, Vue, Next.js</title>
+    <meta name="description" content="Desarrollo de aplicaciones web modernas con React, Vue.js, Next.js. E-commerce, SaaS, PWAs y sitios corporativos. Presupuesto desde $2,500.">
+    <meta name="keywords" content="desarrollo web, React, Vue.js, Next.js, aplicaciones web, e-commerce, SaaS, PWA, República Dominicana">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Desarrollo Web Profesional - RVR Service">
+    <meta property="og:description" content="Creamos aplicaciones web modernas, escalables y optimizadas. React, Vue.js, Next.js. Desde $2,500.">
+    <meta property="og:image" content="../assets/images/services/desarrollo-web-og.jpg">
+    
+    <link rel="canonical" href="https://rvrservice.com/servicios/desarrollo-web.html">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Desarrollo Web Profesional",
+      "description": "Desarrollo de aplicaciones web modernas con React, Vue.js, Next.js",
+      "provider": {
+        "@type": "Organization",
+        "name": "RVR Service",
+        "telephone": "+1-809-757-2575",
+        "email": "contacto@rvrservice.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceRange": "$2500-$50000",
+        "priceCurrency": "USD"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "República Dominicana"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Fixed Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2><a href="../index.html" style="text-decoration: none; color: inherit;">RVR Service</a></h2>
+                    <span class="nav-tagline">Software Development</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html#inicio" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="../index.html#servicios" class="nav-link active">Servicios ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="desarrollo-web.html" class="active">Desarrollo Web</a></li>
+                            <li><a href="desarrollo-mobile.html">Apps Móviles</a></li>
+                            <li><a href="api-backend.html">APIs & Backend</a></li>
+                            <li><a href="consultoria.html">Consultoría Tech</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../portfolio/index.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#nosotros" class="nav-link">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="#cotizar" class="btn btn-primary btn-small">Cotizar Proyecto</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="../index.html">Inicio</a>
+                <span class="breadcrumb-separator">›</span>
+                <a href="../index.html#servicios">Servicios</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current">Desarrollo Web</span>
+            </nav>
+        </div>
+    </section>
+
+    <section id="cotizar" class="contact">
+  <div class="container contact-content">
+    <div class="contact-info">
+      <h3>¿Listo para comenzar tu proyecto web?</h3>
+      <p>Cuéntanos un poco más sobre tu idea y te enviaremos una propuesta personalizada.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-details">
+            <h4>Llámanos</h4>
+            <p><a href="tel:+18097572575">+1 (809) 757-2575</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-details">
+            <h4>Email</h4>
+            <p><a href="mailto:contacto@rvrservice.com">contacto@rvrservice.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Formulario de Cotización</h3>
+      <form class="form" action="mailto:contacto@rvrservice.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="Nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="Email" required>
+        </div>
+        <div class="form-group">
+          <label for="tipo">Tipo de proyecto</label>
+          <select id="tipo" name="Tipo de Proyecto">
+            <option value="Sitio Corporativo">Sitio Corporativo</option>
+            <option value="E-commerce">E-commerce</option>
+            <option value="SaaS">Plataforma SaaS</option>
+            <option value="PWA">PWA</option>
+            <option value="Dashboard">Dashboard</option>
+            <option value="Educativo">Educativo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje o requerimientos</label>
+          <textarea id="mensaje" name="Mensaje" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Cotización</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+    <main>
+        <!-- Hero Section - Desarrollo Web -->
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-hero-content">
+                    <div class="hero-text">
+                        <div class="service-badge">
+                            <span class="badge-icon">🌐</span>
+                            <span>Desarrollo Web Profesional</span>
+                        </div>
+                        <h1 class="service-title">Aplicaciones Web <span class="highlight">Modernas</span> y <span class="highlight">Escalables</span></h1>
+                        <p class="service-subtitle">Creamos experiencias web excepcionales que convierten visitantes en clientes</p>
+                        <p class="service-description">
+                            Desarrollamos aplicaciones web de alta calidad utilizando las tecnologías más avanzadas. 
+                            Desde sitios corporativos hasta plataformas SaaS complejas, transformamos tus ideas en 
+                            soluciones web que impulsan el crecimiento de tu negocio.
+                        </p>
+                        
+                        <div class="service-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-icon">⚡</span>
+                                <span>Performance Optimizada</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">📱</span>
+                                <span>100% Responsive</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🔍</span>
+                                <span>SEO Optimizado</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🔒</span>
+                                <span>Seguro y Confiable</span>
+                            </div>
+                        </div>
+                        
+                        <div class="service-actions">
+                            <a href="#cotizar" class="btn btn-primary btn-large">Cotizar Proyecto</a>
+                            <a href="#portfolio-web" class="btn btn-secondary btn-large">Ver Proyectos</a>
+                            <a href="tel:+18097572575" class="btn btn-outline">📞 Llamar Ahora</a>
+                        </div>
+                        
+                        <div class="price-range">
+                            <span class="price-label">Proyectos desde:</span>
+                            <span class="price-amount">$2,500 USD</span>
+                            <span class="price-note">* Precio varía según complejidad y funcionalidades</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="web-showcase">
+                            <div class="browser-mockup">
+                                <div class="browser-header">
+                                    <div class="browser-controls">
+                                        <span class="control red"></span>
+                                        <span class="control yellow"></span>
+                                        <span class="control green"></span>
+                                    </div>
+                                    <div class="address-bar">
+                                        <span>🔒 www.tu-proyecto.com</span>
+                                    </div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="demo-website">
+                                        <div class="demo-header">
+                                            <div class="demo-logo">Tu Marca</div>
+                                            <div class="demo-nav">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="demo-hero">
+                                            <div class="demo-text-block large"></div>
+                                            <div class="demo-text-block medium"></div>
+                                            <div class="demo-button"></div>
+                                        </div>
+                                        <div class="demo-features">
+                                            <div class="demo-feature-card"></div>
+                                            <div class="demo-feature-card"></div>
+                                            <div class="demo-feature-card"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Floating Tech Icons -->
+                            <div class="tech-float">
+                                <div class="tech-icon react" title="React">⚛️</div>
+                                <div class="tech-icon vue" title="Vue.js">💚</div>
+                                <div class="tech-icon next" title="Next.js">▲</div>
+                                <div class="tech-icon node" title="Node.js">💾</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tecnologías y Stack -->
+        <section class="tech-stack-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Stack Tecnológico</div>
+                    <h2>Tecnologías que Dominamos</h2>
+                    <p>Utilizamos las herramientas más modernas y confiables del mercado</p>
+                </div>
+                
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <h3>Frontend</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">⚛️</div>
+                                <div class="tech-info">
+                                    <h4>React</h4>
+                                    <p>Interfaces dinámicas y componentes reutilizables</p>
+                                </div>
+                            </div>
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">💚</div>
+                                <div class="tech-info">
+                                    <h4>Vue.js</h4>
+                                    <p>Framework progresivo para UIs modernas</p>
+                                </div>
+                            </div>
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">🅰️</div>
+                                <div class="tech-info">
+                                    <h4>Angular</h4>
+                                    <p>Aplicaciones empresariales robustas</p>
+                                </div>
+                            </div>
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">▲</div>
+                                <div class="tech-info">
+                                    <h4>Next.js</h4>
+                                    <p>SSR y generación estática optimizada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h3>Backend & Databases</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">💾</div>
+                                <div class="tech-info">
+                                    <h4>Node.js</h4>
+                                    <p>JavaScript en el servidor, APIs rápidas</p>
+                                </div>
+                            </div>
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">🐍</div>
+                                <div class="tech-info">
+                                    <h4>Python</h4>
+                                    <p>Django/Flask para desarrollo robusto</p>
+                                </div>
+                            </div>
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">🍃</div>
+                                <div class="tech-info">
+                                    <h4>MongoDB</h4>
+                                    <p>Base de datos NoSQL flexible</p>
+                                </div>
+                            </div>
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">🐘</div>
+                                <div class="tech-info">
+                                    <h4>PostgreSQL</h4>
+                                    <p>Base de datos relacional avanzada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">☁️</div>
+                                <div class="tech-info">
+                                    <h4>AWS</h4>
+                                    <p>Infraestructura escalable y confiable</p>
+                                </div>
+                            </div>
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">🐳</div>
+                                <div class="tech-info">
+                                    <h4>Docker</h4>
+                                    <p>Contenedores para deploy consistente</p>
+                                </div>
+                            </div>
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">🔧</div>
+                                <div class="tech-info">
+                                    <h4>CI/CD</h4>
+                                    <p>Integración y despliegue continuo</p>
+                                </div>
+                            </div>
+                            <div class="tech-item-detailed">
+                                <div class="tech-logo">📊</div>
+                                <div class="tech-info">
+                                    <h4>Analytics</h4>
+                                    <p>Monitoreo y métricas en tiempo real</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tipos de Proyectos Web -->
+        <section class="web-project-types">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Especialidades</div>
+                    <h2>Tipos de Proyectos Web</h2>
+                    <p>Soluciones web personalizadas para cada necesidad de negocio</p>
+                </div>
+                
+                <div class="project-types-grid">
+                    <div class="project-type-card featured">
+                        <div class="project-features">
+                            <span>✓ Catálogo de productos</span>
+                            <span>✓ Carrito de compras</span>
+                            <span>✓ Pasarelas de pago</span>
+                            <span>✓ Panel administrativo</span>
+                        </div>
+                        <div class="project-price">Desde $5,500</div>
+                        <a href="#cotizar" class="project-cta">Cotizar E-commerce</a>
+                    </div>
+                    
+                    <div class="project-type-card">
+                        <div class="project-icon">🏢</div>
+                        <h3>Sitios Corporativos</h3>
+                        <p>Presencia web profesional que transmite confianza y credibilidad</p>
+                        <div class="project-features">
+                            <span>✓ Diseño profesional</span>
+                            <span>✓ CMS personalizado</span>
+                            <span>✓ SEO optimizado</span>
+                            <span>✓ Multi-idioma</span>
+                        </div>
+                        <div class="project-price">Desde $2,500</div>
+                        <a href="#cotizar" class="project-cta">Cotizar Corporativo</a>
+                    </div>
+                    
+                    <div class="project-type-card">
+                        <div class="project-icon">⚙️</div>
+                        <h3>Plataformas SaaS</h3>
+                        <p>Software como servicio escalable con suscripciones y multi-tenant</p>
+                        <div class="project-features">
+                            <span>✓ Dashboard interactivo</span>
+                            <span>✓ Sistema de suscripciones</span>
+                            <span>✓ API REST/GraphQL</span>
+                            <span>✓ Analytics avanzado</span>
+                        </div>
+                        <div class="project-price">Desde $15,000</div>
+                        <a href="#cotizar" class="project-cta">Cotizar SaaS</a>
+                    </div>
+                    
+                    <div class="project-type-card">
+                        <div class="project-icon">📱</div>
+                        <h3>Progressive Web Apps</h3>
+                        <p>Apps web que funcionan como nativas, offline y con notificaciones</p>
+                        <div class="project-features">
+                            <span>✓ Funciona offline</span>
+                            <span>✓ Push notifications</span>
+                            <span>✓ Instalable en móvil</span>
+                            <span>✓ Performance nativa</span>
+                        </div>
+                        <div class="project-price">Desde $4,000</div>
+                        <a href="#cotizar" class="project-cta">Cotizar PWA</a>
+                    </div>
+                    
+                    <div class="project-type-card">
+                        <div class="project-icon">📊</div>
+                        <h3>Dashboards & Analytics</h3>
+                        <p>Paneles de control interactivos para visualización de datos</p>
+                        <div class="project-features">
+                            <span>✓ Gráficos interactivos</span>
+                            <span>✓ Filtros avanzados</span>
+                            <span>✓ Exportación de datos</span>
+                            <span>✓ Tiempo real</span>
+                        </div>
+                        <div class="project-price">Desde $3,500</div>
+                        <a href="#cotizar" class="project-cta">Cotizar Dashboard</a>
+                    </div>
+                    
+                    <div class="project-type-card">
+                        <div class="project-icon">🎓</div>
+                        <h3>Plataformas Educativas</h3>
+                        <p>LMS y plataformas de cursos online con gestión de estudiantes</p>
+                        <div class="project-features">
+                            <span>✓ Gestión de cursos</span>
+                            <span>✓ Videos y contenido</span>
+                            <span>✓ Exámenes online</span>
+                            <span>✓ Certificaciones</span>
+                        </div>
+                        <div class="project-price">Desde $8,000</div>
+                        <a href="#cotizar" class="project-cta">Cotizar Educativo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Web Específico -->
+        <section id="portfolio-web" class="portfolio-web-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Portfolio Web</div>
+                    <h2>Proyectos Web Destacados</h2>
+                    <p>Casos de éxito reales con resultados medibles</p>
+                </div>
+                
+                <!-- Portfolio Filter -->
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-btn" data-filter="corporate">Corporativo</button>
+                    <button class="filter-btn" data-filter="saas">SaaS</button>
+                    <button class="filter-btn" data-filter="pwa">PWA</button>
+                </div>
+                
+                <div class="portfolio-web-grid">
+                    <!-- E-commerce Project -->
+                    <div class="portfolio-web-item" data-category="ecommerce">
+                        <div class="portfolio-image-container">
+                            <img src="../assets/images/portfolio/web/ecommerce-fashion.jpg" alt="Fashion Store E-commerce" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h4>Fashion Store Online</h4>
+                                    <p>E-commerce completo con 5000+ productos</p>
+                                    <div class="overlay-tech">
+                                        <span>React</span>
+                                        <span>Node.js</span>
+                                        <span>Stripe</span>
+                                    </div>
+                                    <a href="../portfolio/fashion-store.html" class="overlay-link">Ver Caso Completo →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Fashion Store E-commerce</h3>
+                            <p>Tienda online con gestión avanzada de inventario y múltiples pasarelas de pago</p>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <span class="metric-number">400%</span>
+                                    <span class="metric-label">↑ Conversiones</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-number">2.3s</span>
+                                    <span class="metric-label">Tiempo de carga</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-number">95</span>
+                                    <span class="metric-label">PageSpeed Score</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Corporate Project -->
+                    <div class="portfolio-web-item" data-category="corporate">
+                        <div class="portfolio-image-container">
+                            <img src="../assets/images/portfolio/web/corporate-law.jpg" alt="Law Firm Website" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h4>Firma Legal Corporativa</h4>
+                                    <p>Sitio web profesional multi-idioma</p>
+                                    <div class="overlay-tech">
+                                        <span>Next.js</span>
+                                        <span>CMS</span>
+                                        <span>SEO</span>
+                                    </div>
+                                    <a href="../portfolio/law-firm.html" class="overlay-link">Ver Caso Completo →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Bufete de Abogados</h3>
+                            <p>Sitio corporativo con CMS personalizado y optimización SEO avanzada</p>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <span class="metric-number">300%</span>
+                                    <span class="metric-label">↑ Tráfico orgánico</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-number">1.8s</span>
+                                    <span class="metric-label">Tiempo de carga</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-number">98</span>
+                                    <span class="metric-label">SEO Score</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- SaaS Project -->
+                    <div class="portfolio-web-item" data-category="saas">
+                        <div class="portfolio-image-container">
+                            <img src="../assets/images/portfolio/web/saas-analytics.jpg" alt="Analytics SaaS Platform" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h4>Analytics SaaS Platform</h4>
+                                    <p>Dashboard interactivo para análisis de datos</p>
+                                    <div class="overlay-tech">
+                                        <span>Vue.js</span>
+                                        <span>Python</span>
+                                        <span>AWS</span>
+                                    </div>
+                                    <a href="../portfolio/analytics-saas.html" class="overlay-link">Ver Caso Completo →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Plataforma Analytics SaaS</h3>
+                            <p>Aplicación SaaS para análisis de datos con suscripciones y multi-tenant</p>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <span class="metric-number">1000+</span>
+                                    <span class="metric-label">Usuarios activos</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-number">99.9%</span>
+                                    <span class="metric-label">Uptime</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-number">$50K</span>
+                                    <span class="metric-label">MRR generado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- PWA Project -->
+                    <div class="portfolio-web-item" data-category="pwa">
+                        <div class="portfolio-image-container">
+                            <img src="../assets/images/portfolio/web/pwa-fitness.jpg" alt="Fitness PWA" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h4>Fitness Tracker PWA</h4>
+                                    <p>App web progresiva para seguimiento fitness</p>
+                                    <div class="overlay-tech">
+                                        <span>React</span>
+                                        <span>PWA</span>
+                                        <span>Firebase</span>
+                                    </div>
+                                    <a href="../portfolio/fitness-pwa.html" class="overlay-link">Ver Caso Completo →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Fitness Tracker PWA</h3>
+                            <p>Progressive Web App para seguimiento de ejercicios con funcionalidad offline</p>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <span class="metric-number">4.8★</span>
+                                    <span class="metric-label">Rating usuarios</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-number">85%</span>
+                                    <span class="metric-label">Instalación rate</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-number">100%</span>
+                                    <span class="metric-label">Offline funcional</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-cta">
+                    <a href="../portfolio/index.html?filter=web" class="btn btn-secondary btn-large">Ver Todos los Proyectos Web</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proceso de Desarrollo Web -->
+        <section class="web-development-process">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Metodología</div>
+                    <h2>Proceso de Desarrollo Web</h2>
+                    <p>Metodología probada que garantiza resultados excepcionales</p>
+                </div>
+                
+                <div class="process-web-timeline">
+                    <div class="process-web-step">
+                        <div class="step-icon">🎯</div>
+                        <div class="step-content">
+                            <h3>1. Discovery & Estrategia</h3>
+                            <p>Analizamos tus objetivos, audiencia y competencia para crear la estrategia perfecta</p>
+                            <div class="step-deliverables">
+                                <h4>Entregables:</h4>
+                                <ul>
+                                    <li>Análisis de requerimientos</li>
+                                    <li>Arquitectura de información</li>
+                                    <li>Estrategia de contenido</li>
+                                    <li>Plan de proyecto detallado</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duración: 1-2 semanas</div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-web-step">
+                        <div class="step-icon">🎨</div>
+                        <div class="step-content">
+                            <h3>2. UX/UI Design</h3>
+                            <p>Diseñamos experiencias intuitivas y atractivas que convierten visitantes en clientes</p>
+                            <div class="step-deliverables">
+                                <h4>Entregables:</h4>
+                                <ul>
+                                    <li>Wireframes interactivos</li>
+                                    <li>Prototipo clickeable</li>
+                                    <li>Guía de estilo visual</li>
+                                    <li>Diseños responsivos</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duración: 2-3 semanas</div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-web-step">
+                        <div class="step-icon">⚙️</div>
+                        <div class="step-content">
+                            <h3>3. Desarrollo Frontend</h3>
+                            <p>Convertimos los diseños en código optimizado y funcional usando las mejores tecnologías</p>
+                            <div class="step-deliverables">
+                                <h4>Entregables:</h4>
+                                <ul>
+                                    <li>Interfaz responsive</li>
+                                    <li>Componentes reutilizables</li>
+                                    <li>Animaciones y transiciones</li>
+                                    <li>Performance optimizada</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duración: 3-5 semanas</div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-web-step">
+                        <div class="step-icon">🔧</div>
+                        <div class="step-content">
+                            <h3>4. Desarrollo Backend</h3>
+                            <p>Construimos la lógica del servidor, APIs y base de datos para soportar tu aplicación</p>
+                            <div class="step-deliverables">
+                                <h4>Entregables:</h4>
+                                <ul>
+                                    <li>API REST/GraphQL</li>
+                                    <li>Base de datos optimizada</li>
+                                    <li>Sistema de autenticación</li>
+                                    <li>Panel administrativo</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duración: 2-4 semanas</div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-web-step">
+                        <div class="step-icon">🧪</div>
+                        <div class="step-content">
+                            <h3>5. Testing & QA</h3>
+                            <p>Pruebas exhaustivas para garantizar que todo funcione perfectamente en todos los dispositivos</p>
+                            <div class="step-deliverables">
+                                <h4>Entregables:</h4>
+                                <ul>
+                                    <li>Testing funcional completo</li>
+                                    <li>Pruebas de performance</li>
+                                    <li>Testing de seguridad</li>
+                                    <li>Reporte de calidad</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duración: 1-2 semanas</div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-web-step">
+                        <div class="step-icon">🚀</div>
+                        <div class="step-content">
+                            <h3>6. Lanzamiento & Soporte</h3>
+                            <p>Despliegue profesional y soporte continuo para asegurar el éxito de tu proyecto</p>
+                            <div class="step-deliverables">
+                                <h4>Entregables:</h4>
+                                <ul>
+                                    <li>Deploy a producción</li>
+                                    <li>Configuración de dominio</li>
+                                    <li>Monitoreo y analytics</li>
+                                    <li>Documentación completa</li>
+                                </ul>
+                            </div>
+                            <div class="step-duration">Duración: 1 semana + soporte</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precios y Paquetes -->
+        <section class="pricing-packages">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Precios Transparentes</div>
+                    <h2>Paquetes de Desarrollo Web</h2>
+                    <p>Opciones flexibles adaptadas a tu presupuesto y necesidades</p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Starter</h3>
+                            <div class="pricing-badge">Ideal para PyMES</div>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">2,500</span>
+                            <span class="price-period">USD</span>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>✓ Sitio web responsive (hasta 5 páginas)</li>
+                                <li>✓ Diseño personalizado</li>
+                                <li>✓ CMS básico</li>
+                                <li>✓ Optimización SEO básica</li>
+                                <li>✓ Formulario de contacto</li>
+                                <li>✓ Integración redes sociales</li>
+                                <li>✓ 1 mes de soporte gratis</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-timeline">
+                            <span class="timeline-icon">⏱️</span>
+                            <span>Entrega: 3-4 semanas</span>
+                        </div>
+                        <a href="#cotizar" class="btn btn-secondary btn-block">Solicitar Cotización</a>
+                    </div>
+                    
+                    <div class="pricing-card featured">
+                        <div class="pricing-header">
+                            <h3>Professional</h3>
+                            <div class="pricing-badge popular">Más Popular</div>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">5,500</span>
+                            <span class="price-period">USD</span>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>✓ Todo lo del plan Starter</li>
+                                <li>✓ E-commerce completo</li>
+                                <li>✓ Pasarela de pagos integrada</li>
+                                <li>✓ Gestión de inventario</li>
+                                <li>✓ Panel administrativo</li>
+                                <li>✓ Analytics avanzado</li>
+                                <li>✓ 3 meses de soporte gratis</li>
+                                <li>✓ Training y documentación</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-timeline">
+                            <span class="timeline-icon">⏱️</span>
+                            <span>Entrega: 6-8 semanas</span>
+                        </div>
+                        <a href="#cotizar" class="btn btn-primary btn-block">Solicitar Cotización</a>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <div class="pricing-badge">Solución Completa</div>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">15,000</span>
+                            <span class="price-period">+ USD</span>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>✓ Todo lo del plan Professional</li>
+                                <li>✓ Plataforma SaaS personalizada</li>
+                                <li>✓ Multi-tenant architecture</li>
+                                <li>✓ API REST completa</li>
+                                <li>✓ Integraciones terceros</li>
+                                <li>✓ Escalabilidad automática</li>
+                                <li>✓ 6 meses de soporte gratis</li>
+                                <li>✓ Soporte dedicado 24/7</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-timeline">
+                            <span class="timeline-icon">⏱️</span>
+                            <span>Entrega: 10-16 semanas</span>
+                        </div>
+                        <a href="#cotizar" class="btn btn-secondary btn-block">Consultar Proyecto</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-note">
+                    <p>💡 <strong>Nota:</strong> Los precios son referenciales y pueden variar según los requerimientos específicos del proyecto. 
+                    Incluimos revisiones ilimitadas durante el desarrollo y garantía de satisfacción 100%.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Cotización -->
+        <section id="cotizar" class="quote-form-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Cotización Gratuita</div>
+                    <h2>Solicita tu Cotización Web Personalizada</h2>
+                    <p>Cuéntanos sobre tu proyecto y recibe una propuesta detallada en 24 horas</p>
+                </div>
+                
+                <div class="quote-content">
+                    <div class="quote-benefits">
+                        <h3>¿Por qué elegirnos para tu proyecto web?</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">⚡</div>
+                                <h4>Performance Garantizada</h4>
+                                <p>Sitios web que cargan en menos de 3 segundos, optimizados para SEO y conversiones</p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🔒</div>
+                                <h4>Seguridad Máxima</h4>
+                                <p>Implementamos las mejores prácticas de seguridad y cumplimos con regulaciones internacionales</p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">📱</div>
+                                <h4>Mobile-First</h4>
+                                <p>Diseños que se ven perfectos en todos los dispositivos, desde móviles hasta desktop</p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🚀</div>
+                                <h4>Escalabilidad</h4>
+                                <p>Arquitectura preparada para crecer con tu negocio sin límites de usuarios o contenido</p>
+                            </div>
+                        </div>
+                        
+                        <div class="guarantee-box">
+                            <h4>🏆 Nuestra Garantía</h4>
+                            <ul>
+                                <li>✅ Entrega en el tiempo acordado</li>
+                                <li>✅ Revisiones ilimitadas durante el desarrollo</li>
+                                <li>✅ 30 días de soporte post-lanzamiento gratis</li>
+                                <li>✅ Garantía de satisfacción 100%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="quote-form-container">
+                        <form class="quote-form" id="webQuoteForm">
+                            <div class="form-step active" data-step="1">
+                                <h3>Paso 1: Información Básica</h3>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="company-name">Nombre de la Empresa</label>
+                                        <input type="text" id="company-name" name="company-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-name">Tu Nombre</label>
+                                        <input type="text" id="contact-name" name="contact-name" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Teléfono</label>
+                                        <input type="tel" id="phone" name="phone">
+                                    </div>
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary next-step">Continuar →</button>
+                            </div>
+                            
+                            <div class="form-step" data-step="2">
+                                <h3>Paso 2: Tipo de Proyecto</h3>
+                                
+                                <div class="project-type-selector">
+                                    <div class="project-type-option">
+                                        <input type="radio" id="web-corporate" name="project-type" value="corporate">
+                                        <label for="web-corporate">
+                                            <div class="option-icon">🏢</div>
+                                            <h4>Sitio Corporativo</h4>
+                                            <p>Presencia web profesional</p>
+                                        </label>
+                                    </div>
+                                    <div class="project-type-option">
+                                        <input type="radio" id="web-ecommerce" name="project-type" value="ecommerce">
+                                        <label for="web-ecommerce">
+                                            <div class="option-icon">🛒</div>
+                                            <h4>E-commerce</h4>
+                                            <p>Tienda online completa</p>
+                                        </label>
+                                    </div>
+                                    <div class="project-type-option">
+                                        <input type="radio" id="web-saas" name="project-type" value="saas">
+                                        <label for="web-saas">
+                                            <div class="option-icon">⚙️</div>
+                                            <h4>Plataforma SaaS</h4>
+                                            <p>Software como servicio</p>
+                                        </label>
+                                    </div>
+                                    <div class="project-type-option">
+                                        <input type="radio" id="web-pwa" name="project-type" value="pwa">
+                                        <label for="web-pwa">
+                                            <div class="option-icon">📱</div>
+                                            <h4>Progressive Web App</h4>
+                                            <p>App web con funcionalidad nativa</p>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-secondary prev-step">← Anterior</button>
+                                    <button type="button" class="btn btn-primary next-step">Continuar →</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-step" data-step="3">
+                                <h3>Paso 3: Detalles del Proyecto</h3>
+                                
+                                <div class="form-group">
+                                    <label for="project-description">Descripción del Proyecto</label>
+                                    <textarea id="project-description" name="project-description" rows="4" 
+                                        placeholder="Cuéntanos sobre tu proyecto: objetivos, funcionalidades principales, audiencia objetivo, etc." required></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Funcionalidades Requeridas (selecciona las que apliquen):</label>
+                                    <div class="checkbox-grid">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="cms" name="features" value="cms">
+                                            <label for="cms">CMS / Gestión de contenido</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="ecom-features" name="features" value="ecommerce">
+                                            <label for="ecom-features">Funcionalidades E-commerce</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="user-auth" name="features" value="auth">
+                                            <label for="user-auth">Sistema de usuarios/Login</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="payments" name="features" value="payments">
+                                            <label for="payments">Pasarelas de pago</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="multilang" name="features" value="multilang">
+                                            <label for="multilang">Multi-idioma</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="api-integration" name="features" value="api">
+                                            <label for="api-integration">Integraciones API</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="analytics" name="features" value="analytics">
+                                            <label for="analytics">Analytics y reportes</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="mobile-app" name="features" value="mobile">
+                                            <label for="mobile-app">Versión móvil/PWA</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="budget-web">Presupuesto Estimado</label>
+                                        <select id="budget-web" name="budget" required>
+                                            <option value="">Selecciona tu presupuesto</option>
+                                            <option value="2500-5000">$2,500 - $5,000</option>
+                                            <option value="5000-10000">$5,000 - $10,000</option>
+                                            <option value="10000-25000">$10,000 - $25,000</option>
+                                            <option value="25000-50000">$25,000 - $50,000</option>
+                                            <option value="50000+">$50,000+</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="timeline-web">Timeline del Proyecto</label>
+                                        <select id="timeline-web" name="timeline" required>
+                                            <option value="">¿Cuándo necesitas lanzar?</option>
+                                            <option value="urgente">ASAP (< 1 mes)</option>
+                                            <option value="1-2-meses">1-2 meses</option>
+                                            <option value="2-4-meses">2-4 meses</option>
+                                            <option value="4+-meses">4+ meses</option>
+                                            <option value="flexible">Flexible</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-secondary prev-step">← Anterior</button>
+                                    <button type="button" class="btn btn-primary next-step">Continuar →</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-step" data-step="4">
+                                <h3>Paso 4: Información Adicional</h3>
+                                
+                                <div class="form-group">
+                                    <label for="existing-website">¿Tienes un sitio web actual?</label>
+                                    <input type="url" id="existing-website" name="existing-website" placeholder="https://tu-sitio-actual.com">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="inspiration">Referencias o inspiración (URLs)</label>
+                                    <textarea id="inspiration" name="inspiration" rows="3" 
+                                        placeholder="Comparte URLs de sitios que te gusten o que sean similares a lo que buscas"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="hosting-domain">¿Tienes hosting y dominio?</label>
+                                    <select id="hosting-domain" name="hosting-domain">
+                                        <option value="">Selecciona una opción</option>
+                                        <option value="tengo-ambos">Sí, tengo hosting y dominio</option>
+                                        <option value="solo-dominio">Solo tengo dominio</option>
+                                        <option value="ninguno">No tengo ni hosting ni dominio</option>
+                                        <option value="ayuda-necesaria">Necesito ayuda con esto</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="additional-services">Servicios adicionales de interés:</label>
+                                    <div class="checkbox-grid">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="seo-service" name="additional" value="seo">
+                                            <label for="seo-service">Optimización SEO</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="content-creation" name="additional" value="content">
+                                            <label for="content-creation">Creación de contenido</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="maintenance" name="additional" value="maintenance">
+                                            <label for="maintenance">Mantenimiento mensual</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="training" name="additional" value="training">
+                                            <label for="training">Training para tu equipo</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-secondary prev-step">← Anterior</button>
+                                    <button type="button" class="btn btn-primary next-step">Finalizar →</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-step" data-step="5">
+                                <h3>Paso 5: Consentimientos y Envío</h3>
+                                
+                                <!-- Privacy Notice -->
+                                <div class="privacy-notice enhanced">
+                                    <div class="privacy-icon">🔒</div>
+                                    <div class="privacy-content">
+                                        <p><strong>Protección de Datos:</strong></p>
+                                        <p>Tu información está segura con nosotros. Solo la utilizaremos para preparar tu cotización personalizada y contactarte sobre tu proyecto web.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Privacy Consent -->
+                                <div class="form-group privacy-consent">
+                                    <div class="checkbox-wrapper">
+                                        <input type="checkbox" id="privacy-consent-web" name="privacy-consent" required>
+                                        <label for="privacy-consent-web" class="checkbox-label">
+                                            <span class="checkbox-text">
+                                                ✓ Acepto la <a href="../privacy-policy.html" target="_blank" class="privacy-link"><strong>Política de Privacidad</strong></a> 
+                                                y consiento el procesamiento de mis datos para recibir la cotización. <span class="required-asterisk">*</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <!-- Communication Preferences -->
+                                <div class="form-group">
+                                    <label>Prefiero que me contacten por:</label>
+                                    <div class="radio-group">
+                                        <div class="radio-item">
+                                            <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                                            <label for="contact-email">📧 Email</label>
+                                        </div>
+                                        <div class="radio-item">
+                                            <input type="radio" id="contact-whatsapp" name="contact-method" value="whatsapp">
+                                            <label for="contact-whatsapp">📱 WhatsApp</label>
+                                        </div>
+                                        <div class="radio-item">
+                                            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                                            <label for="contact-phone">📞 Llamada</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Marketing Consent -->
+                                <div class="form-group">
+                                    <div class="checkbox-wrapper">
+                                        <input type="checkbox" id="marketing-consent-web" name="marketing-consent">
+                                        <label for="marketing-consent-web" class="checkbox-label">
+                                            <span class="checkbox-text">
+                                                📧 Quiero recibir tips de desarrollo web y ofertas especiales (máximo 1 email por mes)
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-secondary prev-step">← Anterior</button>
+                                    <button type="submit" class="btn btn-primary btn-submit">
+                                        <span class="btn-text">Enviar Cotización</span>
+                                        <span class="btn-icon">🚀</span>
+                                    </button>
+                                </div>
+                                
+                                <div class="quote-guarantee">
+                                    <p>⚡ <strong>Garantía de respuesta:</strong> Recibirás tu cotización personalizada en menos de 24 horas</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Preguntas Frecuentes</div>
+                    <h2>Todo lo que Necesitas Saber</h2>
+                    <p>Resolvemos las dudas más comunes sobre desarrollo web</p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Cuánto tiempo toma desarrollar un sitio web?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>El tiempo de desarrollo depende de la complejidad del proyecto:</p>
+                            <ul>
+                                <li><strong>Sitio básico:</strong> 3-4 semanas</li>
+                                <li><strong>E-commerce:</strong> 6-8 semanas</li>
+                                <li><strong>Plataforma SaaS:</strong> 10-16 semanas</li>
+                            </ul>
+                            <p>Siempre proporcionamos un cronograma detallado al inicio del proyecto y mantenemos comunicación constante sobre el progreso.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿El sitio web será responsive y mobile-friendly?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>¡Absolutamente! Todos nuestros sitios web son:</p>
+                            <ul>
+                                <li>100% responsive y adaptables a todos los dispositivos</li>
+                                <li>Optimizados para móviles (mobile-first design)</li>
+                                <li>Probados en múltiples dispositivos y navegadores</li>
+                                <li>Optimizados para velocidad de carga en móviles</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Puedo actualizar el contenido yo mismo?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, desarrollamos sitios con CMS intuitivos que te permiten:</p>
+                            <ul>
+                                <li>Actualizar textos e imágenes fácilmente</li>
+                                <li>Agregar nuevas páginas y contenido</li>
+                                <li>Gestionar productos (en e-commerce)</li>
+                                <li>Ver estadísticas y analytics</li>
+                            </ul>
+                            <p>Además, incluimos training para que aprendas a usar todas las funcionalidades.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Qué incluye el soporte post-lanzamiento?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nuestro soporte post-lanzamiento incluye:</p>
+                            <ul>
+                                <li><strong>30 días gratis:</strong> Corrección de bugs y ajustes menores</li>
+                                <li><strong>Soporte técnico:</strong> Resolución de problemas técnicos</li>
+                                <li><strong>Actualizaciones de seguridad:</strong> Mantenemos el sitio seguro</li>
+                                <li><strong>Backups automáticos:</strong> Copias de seguridad regulares</li>
+                                <li><strong>Monitoreo:</strong> Supervisamos el rendimiento del sitio</li>
+                            </ul>
+                            <p>También ofrecemos planes de mantenimiento mensual para soporte continuo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿El sitio estará optimizado para SEO?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, todos nuestros sitios incluyen optimización SEO básica:</p>
+                            <ul>
+                                <li>Estructura HTML semántica</li>
+                                <li>Meta tags optimizados</li>
+                                <li>URLs amigables</li>
+                                <li>Sitemap XML</li>
+                                <li>Velocidad de carga optimizada</li>
+                                <li>Imágenes optimizadas</li>
+                            </ul>
+                            <p>Para SEO avanzado, ofrecemos servicios adicionales de posicionamiento.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Proporcionan hosting y dominio?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Te ayudamos con hosting y dominio:</p>
+                            <ul>
+                                <li><strong>Recomendaciones:</strong> Te sugerimos los mejores proveedores</li>
+                                <li><strong>Configuración:</strong> Nos encargamos de la configuración inicial</li>
+                                <li><strong>Deploy:</strong> Subimos tu sitio al servidor elegido</li>
+                                <li><strong>SSL:</strong> Configuramos certificados de seguridad</li>
+                            </ul>
+                            <p>Puedes elegir tu propio proveedor o nosotros podemos recomendarte opciones confiables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="final-cta">
+            <div class="container">
+                <div class="cta-content-final">
+                    <div class="cta-text-final">
+                        <h2>¿Listo para Crear tu Proyecto Web?</h2>
+                        <p>Únete a más de 50 empresas que han confiado en nosotros para transformar su presencia digital</p>
+                        
+                        <div class="cta-stats">
+                            <div class="cta-stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Proyectos Web</span>
+                            </div>
+                            <div class="cta-stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Clientes Satisfechos</span>
+                            </div>
+                            <div class="cta-stat">
+                                <span class="stat-number">24h</span>
+                                <span class="stat-label">Respuesta Garantizada</span>
+                            </div>
+                        </div>
+                        
+                        <div class="cta-actions-final">
+                            <a href="#cotizar" class="btn btn-primary btn-large">Solicitar Cotización</a>
+                            <a href="tel:+18097572575" class="btn btn-secondary btn-large">📞 Llamar Ahora</a>
+                            <a href="https://wa.me/18097572575?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" class="btn btn-whatsapp btn-large">
+                                💬 WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer enhanced">
+        <div class="container">
+            <div class="footer-content enhanced">
+                <div class="footer-main">
+                    <div class="footer-logo enhanced">
+                        <h3><a href="../index.html" style="color: inherit; text-decoration: none;">RVR Service</a></h3>
+                        <p class="footer-tagline">Desarrollo Web Profesional</p>
+                        <div class="footer-contact-quick">
+                            <a href="tel:+18097572575" class="quick-contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span>+1 (809) 757-2575</span>
+                            </a>
+                            <a href="mailto:contacto@rvrservice.com" class="quick-contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>contacto@rvrservice.com</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-services">
+                        <h4>Servicios Web</h4>
+                        <ul>
+                            <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
+                            <li><a href="#cotizar">E-commerce</a></li>
+                            <li><a href="#cotizar">Plataformas SaaS</a></li>
+                            <li><a href="#cotizar">Progressive Web Apps</a></li>
+                            <li><a href="../index.html#contacto">Mantenimiento Web</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-technologies">
+                        <h4>Tecnologías Web</h4>
+                        <div class="tech-list">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <a href="../empresa/tecnologias.html" class="tech-link">Ver todas las tecnologías →</a>
+                    </div>
+                    
+                    <div class="footer-company">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="../portfolio/index.html">Portfolio Web</a></li>
+                            <li><a href="../empresa/proceso.html">Proceso de Desarrollo</a></li>
+                            <li><a href="../recursos/blog.html">Blog Técnico</a></li>
+                            <li><a href="../index.html#nosotros">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom enhanced">
+                <div class="footer-legal">
+                    <p>&copy; 2024 RVR Service. Todos los derechos reservados.</p>
+                    <div class="footer-legal-links">
+                        <a href="../privacy-policy.html" class="footer-privacy-link">Política de Privacidad</a>
+                        <a href="../legal/terminos.html" class="footer-privacy-link">Términos de Servicio</a>
+                    </div>
+                </div>
+                <div class="footer-location">
+                    <span class="location-icon">📍</span>
+                    <span>Santo Domingo, República Dominicana</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/18097572575?text=Hola%2C%20me%20interesa%20un%20proyecto%20de%20desarrollo%20web" target="_blank" class="whatsapp-btn">
+            <span class="whatsapp-icon">💬</span>
+            <span class="whatsapp-text">¡Hablemos de tu web!</span>
+        </a>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Multi-step form functionality
+        let currentStep = 1;
+        const totalSteps = 5;
+
+        function showStep(step) {
+            document.querySelectorAll('.form-step').forEach(s => s.classList.remove('active'));
+            document.querySelector(`[data-step="${step}"]`).classList.add('active');
+            currentStep = step;
+        }
+
+        // Next step buttons
+        document.querySelectorAll('.next-step').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (validateStep(currentStep)) {
+                    if (currentStep < totalSteps) {
+                        showStep(currentStep + 1);
+                    }
+                }
+            });
+        });
+
+        // Previous step buttons
+        document.querySelectorAll('.prev-step').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (currentStep > 1) {
+                    showStep(currentStep - 1);
+                }
+            });
+        });
+
+        function validateStep(step) {
+            const currentStepEl = document.querySelector(`[data-step="${step}"]`);
+            const requiredFields = currentStepEl.querySelectorAll('[required]');
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#dc3545';
+                    field.addEventListener('input', () => {
+                        field.style.borderColor = '';
+                    });
+                } else {
+                    field.style.borderColor = '#28a745';
+                }
+            });
+
+            if (step === 2) {
+                const projectType = document.querySelector('input[name="project-type"]:checked');
+                if (!projectType) {
+                    isValid = false;
+                    alert('Por favor selecciona el tipo de proyecto web que necesitas.');
+                }
+            }
+
+            return isValid;
+        }
+
+        // Form submission
+        document.getElementById('webQuoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!validateStep(5)) return;
+            
+            // Collect all form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Show success message
+            alert('✅ ¡Cotización enviada exitosamente!\n\n📧 Recibirás una propuesta detallada en menos de 24 horas.\n\n🚀 ¡Gracias por confiar en RVR Service para tu proyecto web!');
+            
+            // Reset form
+            this.reset();
+            showStep(1);
+        });
+
+        // Portfolio filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active filter
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                const items = document.querySelectorAll('.portfolio-web-item');
+                
+                items.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeInUp 0.6s ease-out';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // FAQ functionality
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const toggle = item.querySelector('.faq-toggle');
+            
+            question.addEventListener('click', () => {
+                const isOpen = answer.style.display === 'block';
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                document.querySelectorAll('.faq-toggle').forEach(t => t.textContent = '+');
+                
+                if (!isOpen) {
+                    answer.style.display = 'block';
+                    toggle.textContent = '−';
+                }
+            });
+        });
+
+        // Project type selector styling
+        document.querySelectorAll('input[name="project-type"]').forEach(radio => {
+            radio.addEventListener('change', () => {
+                document.querySelectorAll('.project-type-option').forEach(option => {
+                    option.classList.remove('selected');
+                });
+                radio.closest('.project-type-option').classList.add('selected');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+<div class="project-icon">🛒</div>
+                        <h3>E-commerce</h3>
+                        <p>Tiendas online completas con gestión de productos, pagos y envíos</p>
+                        <div class="project-features">
+                            <span>✓ Catálogo de productos avanzado</span>
+                            <span>✓ Carrito de compras inteligente</span>
+                            <span>✓ Múltiples pasarelas de pago</span>
+                            <span>✓ Panel administrativo completo</span>
+                            <span>✓ Gestión de inventario en tiempo real</span>
+                            <span>✓ Sistema de cupones y descuentos</span>
+                            <span>✓ Integración con envíos</span>
+                            <span>✓ Analytics de ventas</span>
+                            <span>✓ SEO para productos</span>
+                            <span>✓ Mobile commerce optimizado</span>
+                        </div>
+                        <div class="project-highlights">
+                            <div class="highlight-badge">
+                                <span class="badge-icon">🚀</span>
+                                <span>Más Popular</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-stack">
+                            <h4>Tecnologías Utilizadas:</h4>
+                            <div class="tech-stack-mini">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">Stripe</span>
+                                <span class="tech-badge">PayPal</span>
+                                <span class="tech-badge">AWS</span>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-mini">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Tiendas Creadas</span>
+                            </div>
+                            <div class="stat-mini">
+                                <span class="stat-number">$2M+</span>
+                                <span class="stat-label">Ventas Generadas</span>
+                            </div>
+                            <div class="stat-mini">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                        </div>
+                        <div class="project-price-range">
+                            <div class="price-from">
+                                <span class="price-label">Desde</span>
+                                <span class="price-amount">$5,500</span>
+                                <span class="price-currency">USD</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="price-note">• Setup completo incluido</span>
+                                <span class="price-note">• Training y documentación</span>
+                                <span class="price-note">• 3 meses de soporte gratis</span>
+                                <span class="price-note">• SSL y seguridad incluida</span>
+                            </div>
+                        </div>
+                        <div class="project-timeline">
+                            <div class="timeline-info">
+                                <span class="timeline-icon">⏱️</span>
+                                <span class="timeline-text">6-8 semanas de desarrollo</span>
+                            </div>
+                            <div class="timeline-phases">
+                                <span class="phase">Diseño: 2 semanas</span>
+                                <span class="phase">Desarrollo: 4 semanas</span>
+                                <span class="phase">Testing: 1 semana</span>
+                                <span class="phase">Lanzamiento: 1 semana</span>
+                            </div>
+                        </div>
+                        <div class="project-includes">
+                            <h4>¿Qué Incluye?</h4>
+                            <div class="includes-grid">
+                                <div class="include-item">
+                                    <span class="include-icon">🎨</span>
+                                    <span>Diseño personalizado</span>
+                                </div>
+                                <div class="include-item">
+                                    <span class="include-icon">📱</span>
+                                    <span>Responsive design</span>
+                                </div>
+                                <div class="include-item">
+                                    <span class="include-icon">💳</span>
+                                    <span>Pasarelas de pago</span>
+                                </div>
+                                <div class="include-item">
+                                    <span class="include-icon">📦</span>
+                                    <span>Gestión de productos</span>
+                                </div>
+                                <div class="include-item">
+                                    <span class="include-icon">📊</span>
+                                    <span>Dashboard administrativo</span>
+                                </div>
+                                <div class="include-item">
+                                    <span class="include-icon">🔒</span>
+                                    <span>Seguridad SSL</span>
+                                </div>
+                                <div class="include-item">
+                                    <span class="include-icon">📈</span>
+                                    <span>SEO optimizado</span>
+                                </div>
+                                <div class="include-item">
+                                    <span class="include-icon">🎓</span>
+                                    <span>Training incluido</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-success-stories">
+                            <h4>Casos de Éxito:</h4>
+                            <div class="success-story">
+                                <div class="story-logo">👗</div>
+                                <div class="story-info">
+                                    <h5>Fashion Store RD</h5>
+                                    <p>"Incrementamos ventas 400% en 6 meses"</p>
+                                    <div class="story-metrics">
+                                        <span>5,000+ productos</span>
+                                        <span>50K+ clientes</span>
+                                        <span>$500K+ ventas mensuales</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="success-story">
+                                <div class="story-logo">🏠</div>
+                                <div class="story-info">
+                                    <h5>Home Decor Plus</h5>
+                                    <p>"ROI del 300% en el primer año"</p>
+                                    <div class="story-metrics">
+                                        <span>2,000+ productos</span>
+                                        <span>25K+ clientes</span>
+                                        <span>98% satisfacción</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-addons">
+                            <h4>Servicios Adicionales:</h4>
+                            <div class="addon-list">
+                                <div class="addon-item">
+                                    <span class="addon-name">Marketing Digital</span>
+                                    <span class="addon-price">+$800/mes</span>
+                                </div>
+                                <div class="addon-item">
+                                    <span class="addon-name">Mantenimiento Premium</span>
+                                    <span class="addon-price">+$300/mes</span>
+                                </div>
+                                <div class="addon-item">
+                                    <span class="addon-name">Integración ERP</span>
+                                    <span class="addon-price">+$2,500</span>
+                                </div>
+                                <div class="addon-item">
+                                    <span class="addon-name">App Móvil Complementaria</span>
+                                    <span class="addon-price">+$8,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-guarantee">
+                            <div class="guarantee-seal">
+                                <span class="seal-icon">🏆</span>
+                                <span class="seal-text">Garantía Total</span>
+                            </div>
+                            <div class="guarantee-points">
+                                <span>• 30 días de garantía post-lanzamiento</span>
+                                <span>• Revisiones ilimitadas durante desarrollo</span>
+                                <span>• Reembolso 100% si no cumple expectativas</span>
+                                <span>• Soporte técnico incluido</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#cotizar" class="btn btn-primary btn-large project-cta-main">
+                                <span class="btn-text">Cotizar E-commerce</span>
+                                <span class="btn-icon">🛒</span>
+                            </a>
+                            <a href="../portfolio/ecommerce-projects.html" class="btn btn-secondary">
+                                Ver Proyectos E-commerce
+                            </a>
+                            <a href="https://wa.me/18097572575?text=Hola%2C%20me%20interesa%20una%20tienda%20online" target="_blank" class="btn btn-whatsapp">
+                                <span class="btn-icon">💬</span>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                        <div class="project-faq-mini">
+                            <h4>Preguntas Frecuentes:</h4>
+                            <div class="mini-faq">
+                                <details class="faq-detail">
+                                    <summary>¿Cuántos productos puedo agregar?</summary>
+                                    <p>Sin límite. Nuestras tiendas están optimizadas para manejar desde 10 hasta 100,000+ productos sin afectar el rendimiento.</p>
+                                </details>
+                                <details class="faq-detail">
+                                    <summary>¿Qué pasarelas de pago incluyen?</summary>
+                                    <p>Integramos Stripe, PayPal, tarjetas de crédito/débito locales, y podemos agregar cualquier pasarela específica que necesites.</p>
+                                </details>
+                                <details class="faq-detail">
+                                    <summary>¿Incluye gestión de inventario?</summary>
+                                    <p>Sí, incluye sistema completo de inventario con alertas de stock bajo, tracking de productos, y reportes detallados de ventas.</p>
+                                </details>
+                                <details class="faq-detail">
+                                    <summary>¿Puedo integrarlo con mi sistema actual?</summary>
+                                    <p>Absolutamente. Podemos integrar con ERPs, CRMs, sistemas de contabilidad y cualquier herramienta que uses actualmente.</p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <!-- CSS específico para la sección E-commerce -->
+                        <style>
+                            .project-highlights {
+                                margin: 1rem 0;
+                            }
+                            
+                            .highlight-badge {
+                                display: inline-flex;
+                                align-items: center;
+                                gap: 0.5rem;
+                                background: linear-gradient(135deg, #ff6b35, #f7931e);
+                                color: white;
+                                padding: 0.5rem 1rem;
+                                border-radius: 20px;
+                                font-size: 0.85rem;
+                                font-weight: 600;
+                                box-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
+                            }
+                            
+                            .badge-icon {
+                                font-size: 1rem;
+                            }
+                            
+                            .project-tech-stack {
+                                margin: 1.5rem 0;
+                            }
+                            
+                            .project-tech-stack h4 {
+                                color: var(--primary-color);
+                                font-size: 0.95rem;
+                                margin-bottom: 0.75rem;
+                            }
+                            
+                            .tech-stack-mini {
+                                display: flex;
+                                gap: 0.5rem;
+                                flex-wrap: wrap;
+                            }
+                            
+                            .tech-badge {
+                                background: var(--background-light);
+                                color: var(--primary-color);
+                                padding: 0.25rem 0.6rem;
+                                border-radius: 12px;
+                                font-size: 0.8rem;
+                                font-weight: 500;
+                                border: 1px solid var(--border-color);
+                            }
+                            
+                            .project-stats {
+                                display: flex;
+                                gap: 1.5rem;
+                                margin: 1.5rem 0;
+                                padding: 1rem;
+                                background: var(--background-light);
+                                border-radius: var(--border-radius);
+                            }
+                            
+                            .stat-mini {
+                                text-align: center;
+                                flex: 1;
+                            }
+                            
+                            .stat-mini .stat-number {
+                                display: block;
+                                font-size: 1.2rem;
+                                font-weight: 700;
+                                color: var(--primary-color);
+                                margin-bottom: 0.25rem;
+                            }
+                            
+                            .stat-mini .stat-label {
+                                font-size: 0.8rem;
+                                color: var(--text-light);
+                            }
+                            
+                            .project-price-range {
+                                background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+                                color: white;
+                                padding: 1.5rem;
+                                border-radius: var(--border-radius);
+                                margin: 1.5rem 0;
+                            }
+                            
+                            .price-from {
+                                text-align: center;
+                                margin-bottom: 1rem;
+                            }
+                            
+                            .price-label {
+                                font-size: 0.9rem;
+                                opacity: 0.8;
+                                display: block;
+                            }
+                            
+                            .price-amount {
+                                font-size: 2.5rem;
+                                font-weight: 700;
+                                margin: 0 0.25rem;
+                            }
+                            
+                            .price-currency {
+                                font-size: 1rem;
+                                opacity: 0.8;
+                            }
+                            
+                            .price-details {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 0.25rem;
+                            }
+                            
+                            .price-note {
+                                font-size: 0.85rem;
+                                opacity: 0.9;
+                            }
+                            
+                            .project-timeline {
+                                background: var(--background-section);
+                                padding: 1.5rem;
+                                border-radius: var(--border-radius);
+                                margin: 1.5rem 0;
+                            }
+                            
+                            .timeline-info {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+                                margin-bottom: 1rem;
+                                font-weight: 500;
+                                color: var(--primary-color);
+                            }
+                            
+                            .timeline-phases {
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                                gap: 0.5rem;
+                            }
+                            
+                            .phase {
+                                background: var(--secondary-color);
+                                padding: 0.5rem;
+                                border-radius: var(--border-radius);
+                                text-align: center;
+                                font-size: 0.85rem;
+                                color: var(--text-secondary);
+                                border: 1px solid var(--border-color);
+                            }
+                            
+                            .project-includes {
+                                margin: 2rem 0;
+                            }
+                            
+                            .project-includes h4 {
+                                color: var(--primary-color);
+                                margin-bottom: 1rem;
+                                font-size: 1.1rem;
+                            }
+                            
+                            .includes-grid {
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                                gap: 0.75rem;
+                            }
+                            
+                            .include-item {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+                                background: var(--background-light);
+                                padding: 0.75rem;
+                                border-radius: var(--border-radius);
+                                font-size: 0.9rem;
+                                color: var(--text-secondary);
+                            }
+                            
+                            .include-icon {
+                                font-size: 1.1rem;
+                            }
+                            
+                            .project-success-stories {
+                                background: #f8f9fa;
+                                padding: 1.5rem;
+                                border-radius: var(--border-radius);
+                                margin: 2rem 0;
+                                border-left: 4px solid #28a745;
+                            }
+                            
+                            .project-success-stories h4 {
+                                color: #28a745;
+                                margin-bottom: 1rem;
+                            }
+                            
+                            .success-story {
+                                display: flex;
+                                align-items: flex-start;
+                                gap: 1rem;
+                                margin-bottom: 1.5rem;
+                                padding-bottom: 1rem;
+                                border-bottom: 1px solid #e9ecef;
+                            }
+                            
+                            .success-story:last-child {
+                                margin-bottom: 0;
+                                padding-bottom: 0;
+                                border-bottom: none;
+                            }
+                            
+                            .story-logo {
+                                font-size: 2rem;
+                                width: 60px;
+                                text-align: center;
+                            }
+                            
+                            .story-info h5 {
+                                color: var(--primary-color);
+                                margin-bottom: 0.5rem;
+                                font-size: 1rem;
+                            }
+                            
+                            .story-info p {
+                                color: var(--text-secondary);
+                                font-style: italic;
+                                margin-bottom: 0.75rem;
+                                font-size: 0.9rem;
+                            }
+                            
+                            .story-metrics {
+                                display: flex;
+                                gap: 1rem;
+                                flex-wrap: wrap;
+                            }
+                            
+                            .story-metrics span {
+                                background: #28a745;
+                                color: white;
+                                padding: 0.25rem 0.5rem;
+                                border-radius: 12px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            }
+                            
+                            .project-addons {
+                                background: var(--background-light);
+                                padding: 1.5rem;
+                                border-radius: var(--border-radius);
+                                margin: 2rem 0;
+                            }
+                            
+                            .project-addons h4 {
+                                color: var(--primary-color);
+                                margin-bottom: 1rem;
+                            }
+                            
+                            .addon-list {
+                                display: grid;
+                                gap: 0.75rem;
+                            }
+                            
+                            .addon-item {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                background: var(--secondary-color);
+                                padding: 1rem;
+                                border-radius: var(--border-radius);
+                                border: 1px solid var(--border-color);
+                            }
+                            
+                            .addon-name {
+                                color: var(--text-primary);
+                                font-weight: 500;
+                            }
+                            
+                            .addon-price {
+                                color: var(--primary-color);
+                                font-weight: 600;
+                            }
+                            
+                            .project-guarantee {
+                                background: linear-gradient(135deg, #28a745, #20c997);
+                                color: white;
+                                padding: 1.5rem;
+                                border-radius: var(--border-radius);
+                                margin: 2rem 0;
+                            }
+                            
+                            .guarantee-seal {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+                                margin-bottom: 1rem;
+                                font-weight: 600;
+                                font-size: 1.1rem;
+                            }
+                            
+                            .seal-icon {
+                                font-size: 1.5rem;
+                            }
+                            
+                            .guarantee-points {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 0.5rem;
+                            }
+                            
+                            .guarantee-points span {
+                                font-size: 0.9rem;
+                                opacity: 0.95;
+                            }
+                            
+                            .project-actions {
+                                display: flex;
+                                gap: 1rem;
+                                margin: 2rem 0;
+                                flex-wrap: wrap;
+                            }
+                            
+                            .project-cta-main {
+                                flex: 2;
+                                min-width: 200px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 0.5rem;
+                            }
+                            
+                            .project-faq-mini {
+                                margin: 2rem 0;
+                            }
+                            
+                            .project-faq-mini h4 {
+                                color: var(--primary-color);
+                                margin-bottom: 1rem;
+                            }
+                            
+                            .mini-faq {
+                                display: grid;
+                                gap: 0.5rem;
+                            }
+                            
+                            .faq-detail {
+                                background: var(--background-light);
+                                border-radius: var(--border-radius);
+                                border: 1px solid var(--border-color);
+                            }
+                            
+                            .faq-detail summary {
+                                padding: 1rem;
+                                cursor: pointer;
+                                color: var(--primary-color);
+                                font-weight: 500;
+                                font-size: 0.95rem;
+                            }
+                            
+                            .faq-detail summary:hover {
+                                background: var(--background-section);
+                            }
+                            
+                            .faq-detail p {
+                                padding: 0 1rem 1rem 1rem;
+                                color: var(--text-secondary);
+                                font-size: 0.9rem;
+                                line-height: 1.5;
+                                margin: 0;
+                            }
+                            
+                            /* Responsive adjustments */
+                            @media (max-width: 768px) {
+                                .project-stats {
+                                    flex-direction: column;
+                                    gap: 1rem;
+                                }
+                                
+                                .timeline-phases {
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                                
+                                .includes-grid {
+                                    grid-template-columns: 1fr;
+                                }
+                                
+                                .project-actions {
+                                    flex-direction: column;
+                                }
+                                
+                                .project-cta-main {
+                                    flex: 1;
+                                }
+                                
+                                .story-metrics {
+                                    flex-direction: column;
+                                    gap: 0.5rem;
+                                }
+                            }
+                            
+                            @media (max-width: 480px) {
+                                .price-amount {
+                                    font-size: 2rem;
+                                }
+                                
+                                .timeline-phases {
+                                    grid-template-columns: 1fr;
+                                }
+                                
+                                .success-story {
+                                    flex-direction: column;
+                                    text-align: center;
+                                }
+                                
+                                .addon-item {
+                                    flex-direction: column;
+                                    gap: 0.5rem;
+                                    text-align: center;
+                                }
+                            }
+                        </style>

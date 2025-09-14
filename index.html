@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RVR Service - Servicios Profesionales Integrales</title>
+    <title>RVR Service - Desarrollo de Software Web y Móvil | República Dominicana</title>
+    <meta name="description" content="Desarrollo de software profesional en República Dominicana. Aplicaciones web, móviles iOS/Android, APIs y sistemas personalizados. Consultoría técnica especializada.">
+    <meta name="keywords" content="desarrollo software, apps móviles, desarrollo web, API, República Dominicana, programming, react, flutter">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RVR Service - Desarrollo de Software Web y Móvil">
+    <meta property="og:description" content="Creamos aplicaciones web modernas, apps móviles nativas y APIs robustas. Transformamos ideas en soluciones tecnológicas exitosas.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://rvrservice.com">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RVR Service - Desarrollo de Software">
+    <meta name="twitter:description" content="Desarrollo profesional de apps web y móviles en República Dominicana">
+    
+    <link rel="canonical" href="https://rvrservice.com">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RVR Service",
+      "description": "Empresa de desarrollo de software especializada en aplicaciones web, móviles y APIs",
+      "url": "https://rvrservice.com",
+      "telephone": "+1-809-757-2575",
+      "email": "contacto@rvrservice.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DO",
+        "addressLocality": "Santo Domingo"
+      },
+      "sameAs": [
+        "https://github.com/rvrservice",
+        "https://linkedin.com/company/rvrservice"
+      ],
+      "offers": {
+        "@type": "Service",
+        "serviceType": "Desarrollo de Software",
+        "provider": {
+          "@type": "Organization",
+          "name": "RVR Service"
+        }
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Fixed Navigation Header -->
@@ -14,21 +60,34 @@
             <div class="nav-container">
                 <div class="nav-logo">
                     <h2>RVR Service</h2>
+                    <span class="nav-tagline">Software Development</span>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
                         <a href="#inicio" class="nav-link">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#nosotros" class="nav-link">Nosotros</a>
+                    <li class="nav-item dropdown">
+                        <a href="#servicios" class="nav-link">Servicios ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios/desarrollo-web.html">Desarrollo Web</a></li>
+                            <li><a href="servicios/desarrollo-mobile.html">Apps Móviles</a></li>
+                            <li><a href="servicios/api-backend.html">APIs & Backend</a></li>
+                            <li><a href="servicios/consultoria.html">Consultoría Tech</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#servicios" class="nav-link">Servicios</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#nosotros" class="nav-link">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contacto" class="nav-link">Contacto</a>
                     </li>
                 </ul>
+                <div class="nav-cta">
+                    <a href="#contacto" class="btn btn-primary btn-small">Consulta Gratuita</a>
+                </div>
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -49,113 +108,375 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Inicio Section -->
-        <section id="inicio" class="hero">
+        <!-- Hero Section - Software Development Focus -->
+        <section id="inicio" class="hero hero-software">
             <div class="hero-container">
                 <div class="hero-content">
-                    <h1 class="hero-title">RVR Service</h1>
-                    <p class="hero-subtitle">Soluciones Profesionales Integrales</p>
+                    <div class="hero-badge">
+                        <span>🚀 Desarrollo de Software Profesional</span>
+                    </div>
+                    <h1 class="hero-title">Transformamos tus <span class="highlight">Ideas</span> en <span class="highlight">Software</span> Exitoso</h1>
+                    <p class="hero-subtitle">Desarrollamos aplicaciones web modernas, apps móviles nativas y APIs robustas</p>
                     <p class="hero-description">
-                        Ofrecemos servicios técnicos especializados, construcción y desarrollo tecnológico 
-                        con la más alta calidad y profesionalismo para satisfacer todas sus necesidades.
+                        Somos un equipo especializado en crear soluciones tecnológicas que impulsan el crecimiento 
+                        de tu negocio. Desde startups hasta empresas consolidadas, convertimos conceptos en 
+                        productos digitales de alta calidad.
                     </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Proyectos Completados</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Clientes Satisfechos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Soporte Técnico</span>
+                        </div>
+                    </div>
                     <div class="hero-buttons">
-                        <a href="#servicios" class="btn btn-primary">Nuestros Servicios</a>
-                        <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
+                        <a href="#contacto" class="btn btn-primary btn-large">Iniciar Proyecto</a>
+                        <a href="#portfolio" class="btn btn-secondary btn-large">Ver Portfolio</a>
+                    </div>
+                    <div class="hero-technologies">
+                        <p class="tech-label">Trabajamos con:</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">React</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">Flutter</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">AWS</span>
+                            <span class="tech-item">+15 más</span>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="hero-graphic">
-                        <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Service icons arranged in a modern grid -->
-                            <rect x="50" y="50" width="60" height="60" rx="12" fill="var(--primary-color)" opacity="0.1"/>
-                            <rect x="170" y="50" width="60" height="60" rx="12" fill="var(--primary-color)" opacity="0.2"/>
-                            <rect x="290" y="50" width="60" height="60" rx="12" fill="var(--primary-color)" opacity="0.1"/>
-                            <rect x="50" y="130" width="60" height="60" rx="12" fill="var(--primary-color)" opacity="0.2"/>
-                            <rect x="170" y="130" width="60" height="60" rx="12" fill="var(--primary-color)" opacity="0.3"/>
-                            <rect x="290" y="130" width="60" height="60" rx="12" fill="var(--primary-color)" opacity="0.2"/>
-                            <rect x="50" y="210" width="60" height="60" rx="12" fill="var(--primary-color)" opacity="0.1"/>
-                            <rect x="170" y="210" width="60" height="60" rx="12" fill="var(--primary-color)" opacity="0.2"/>
-                            <rect x="290" y="210" width="60" height="60" rx="12" fill="var(--primary-color)" opacity="0.1"/>
-                            
-                            <!-- Connecting lines -->
-                            <path d="M110 80 L170 80" stroke="var(--primary-color)" stroke-width="2" opacity="0.3"/>
-                            <path d="M230 80 L290 80" stroke="var(--primary-color)" stroke-width="2" opacity="0.3"/>
-                            <path d="M80 110 L80 130" stroke="var(--primary-color)" stroke-width="2" opacity="0.3"/>
-                            <path d="M200 110 L200 130" stroke="var(--primary-color)" stroke-width="2" opacity="0.3"/>
-                            <path d="M320 110 L320 130" stroke="var(--primary-color)" stroke-width="2" opacity="0.3"/>
-                        </svg>
+                    <div class="hero-graphic-modern">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <span class="control red"></span>
+                                    <span class="control yellow"></span>
+                                    <span class="control green"></span>
+                                </div>
+                                <span class="window-title">app.js</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="code-keyword">function</span> <span class="code-function">createApp</span>() {</div>
+                                <div class="code-line">  <span class="code-keyword">return</span> <span class="code-string">"Tu idea aquí"</span>;</div>
+                                <div class="code-line">}</div>
+                                <div class="code-line"></div>
+                                <div class="code-line"><span class="code-comment">// Transformamos código en soluciones</span></div>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="element element-1">💻</div>
+                            <div class="element element-2">📱</div>
+                            <div class="element element-3">⚡</div>
+                            <div class="element element-4">🎯</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Nosotros Section -->
-        <section id="nosotros" class="about">
+        <!-- Servicios Principales -->
+        <section id="servicios" class="services-main">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Sobre Nosotros</h2>
-                    <p class="section-subtitle">Experiencia y compromiso en cada proyecto</p>
+                    <div class="section-badge">Nuestros Servicios</div>
+                    <h2 class="section-title">Soluciones Tecnológicas Completas</h2>
+                    <p class="section-subtitle">Cubrimos todo el espectro del desarrollo de software moderno</p>
                 </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <h3>¿Quiénes Somos?</h3>
-                        <p>
-                            RVR Service es una empresa líder en servicios integrales con años de experiencia 
-                            en el mercado. Nos especializamos en brindar soluciones completas que abarcan 
-                            desde servicios técnicos tradicionales hasta el desarrollo de tecnología avanzada.
-                        </p>
-                        <h3>Nuestros Valores</h3>
-                        <ul class="values-list">
-                            <li>Calidad y excelencia en cada proyecto</li>
-                            <li>Compromiso con los tiempos de entrega</li>
-                            <li>Innovación y actualización constante</li>
-                            <li>Atención personalizada al cliente</li>
-                            <li>Transparencia y honestidad</li>
+                <div class="services-grid-main">
+                    <div class="service-card featured">
+                        <div class="service-icon">🌐</div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Aplicaciones web modernas, responsivas y escalables con las últimas tecnologías</p>
+                        <ul class="service-features">
+                            <li>React, Vue.js, Angular</li>
+                            <li>Progressive Web Apps</li>
+                            <li>E-commerce & SaaS</li>
+                            <li>Optimización SEO</li>
                         </ul>
+                        <div class="service-price">Desde $2,500</div>
+                        <a href="servicios/desarrollo-web.html" class="btn btn-primary">Ver Más</a>
                     </div>
-                   
+                    
+                    <div class="service-card featured">
+                        <div class="service-icon">📱</div>
+                        <h3>Apps Móviles</h3>
+                        <p>Aplicaciones nativas e híbridas para iOS y Android con experiencia premium</p>
+                        <ul class="service-features">
+                            <li>Flutter & React Native</li>
+                            <li>Swift & Kotlin nativo</li>
+                            <li>App Store Optimization</li>
+                            <li>Push Notifications</li>
+                        </ul>
+                        <div class="service-price">Desde $3,500</div>
+                        <a href="servicios/desarrollo-mobile.html" class="btn btn-primary">Ver Más</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>APIs & Backend</h3>
+                        <p>Arquitecturas robustas y escalables para soportar tus aplicaciones</p>
+                        <ul class="service-features">
+                            <li>REST & GraphQL APIs</li>
+                            <li>Microservicios</li>
+                            <li>Cloud Infrastructure</li>
+                            <li>Database Design</li>
+                        </ul>
+                        <div class="service-price">Desde $1,800</div>
+                        <a href="servicios/api-backend.html" class="btn btn-secondary">Ver Más</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3>Consultoría Tech</h3>
+                        <p>Asesoría especializada para optimizar tus procesos y arquitectura tecnológica</p>
+                        <ul class="service-features">
+                            <li>Auditorías de código</li>
+                            <li>Arquitectura de software</li>
+                            <li>Migración de sistemas</li>
+                            <li>Performance optimization</li>
+                        </ul>
+                        <div class="service-price">$150/hora</div>
+                        <a href="servicios/consultoria.html" class="btn btn-secondary">Ver Más</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Servicios Section -->
-        <section id="servicios" class="services">
+        <!-- Portfolio Destacado -->
+        <section id="portfolio" class="portfolio-preview">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Nuestros Servicios</h2>
-                    <p class="section-subtitle">Soluciones completas para todas sus necesidades</p>
+                    <div class="section-badge">Portfolio</div>
+                    <h2 class="section-title">Proyectos que Nos Enorgullecen</h2>
+                    <p class="section-subtitle">Casos de éxito reales con resultados medibles</p>
                 </div>
-                <div class="services-grid">
-                    <!-- Technical Services -->
-                
+                <div class="portfolio-grid">
+                    <div class="portfolio-item featured">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/ecommerce-app.jpg" alt="E-commerce App" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Plataforma E-commerce</h3>
+                            <p>Sistema completo de ventas online con panel administrativo y app móvil</p>
+                            <div class="portfolio-results">
+                                <div class="result-item">
+                                    <span class="result-number">300%</span>
+                                    <span class="result-label">Aumento ventas</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">50k+</span>
+                                    <span class="result-label">Usuarios activos</span>
+                                </div>
+                            </div>
+                            <a href="portfolio/ecommerce-platform.html" class="portfolio-link">Ver caso completo →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/fintech-app.jpg" alt="FinTech Mobile App" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-tech">
+                                    <span>Flutter</span>
+                                    <span>Firebase</span>
+                                    <span>API Banking</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>App FinTech</h3>
+                            <p>Aplicación de pagos móviles con alta seguridad y UX intuitiva</p>
+                            <div class="portfolio-results">
+                                <div class="result-item">
+                                    <span class="result-number">4.8★</span>
+                                    <span class="result-label">App Store</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">100k+</span>
+                                    <span class="result-label">Transacciones</span>
+                                </div>
+                            </div>
+                            <a href="portfolio/fintech-app.html" class="portfolio-link">Ver caso completo →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/saas-dashboard.jpg" alt="SaaS Dashboard" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-tech">
+                                    <span>Vue.js</span>
+                                    <span>Python</span>
+                                    <span>AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>SaaS Analytics</h3>
+                            <p>Dashboard de analytics en tiempo real para empresas</p>
+                            <div class="portfolio-results">
+                                <div class="result-item">
+                                    <span class="result-number">99.9%</span>
+                                    <span class="result-label">Uptime</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">500+</span>
+                                    <span class="result-label">Empresas</span>
+                                </div>
+                            </div>
+                            <a href="portfolio/saas-analytics.html" class="portfolio-link">Ver caso completo →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-cta">
+                    <a href="portfolio/index.html" class="btn btn-secondary btn-large">Ver Todo el Portfolio</a>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Construction Services -->
-                 
+        <!-- Proceso de Desarrollo -->
+        <section class="development-process">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Nuestro Proceso</div>
+                    <h2 class="section-title">De la Idea al Lanzamiento</h2>
+                    <p class="section-subtitle">Metodología probada que garantiza resultados exitosos</p>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Discovery & Análisis</h3>
+                            <p>Entendemos tu negocio, objetivos y requerimientos técnicos</p>
+                            <ul>
+                                <li>Análisis de mercado</li>
+                                <li>Definición de objetivos</li>
+                                <li>Arquitectura técnica</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Diseño & Prototipado</h3>
+                            <p>Creamos wireframes y prototipos interactivos para validar la experiencia</p>
+                            <ul>
+                                <li>UX/UI Design</li>
+                                <li>Prototipos clickeables</li>
+                                <li>Testing con usuarios</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Desarrollo Ágil</h3>
+                            <p>Desarrollo iterativo con entregas frecuentes y feedback continuo</p>
+                            <ul>
+                                <li>Sprints de 2 semanas</li>
+                                <li>Demos regulares</li>
+                                <li>Testing automatizado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Testing & QA</h3>
+                            <p>Pruebas exhaustivas para garantizar calidad y performance</p>
+                            <ul>
+                                <li>Testing funcional</li>
+                                <li>Performance testing</li>
+                                <li>Security testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h3>Lanzamiento & Soporte</h3>
+                            <p>Despliegue profesional y soporte continuo post-lanzamiento</p>
+                            <ul>
+                                <li>Deploy a producción</li>
+                                <li>Monitoreo 24/7</li>
+                                <li>Soporte y mantenimiento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Development Services -->
-                    <div class="service-category">
-                        <h3 class="category-title">Desarrollo Tecnológico</h3>
-                        <div class="service-items">
-                            <div class="service-item">
-                                <div class="service-icon">💻</div>
-                                <h4>Desarrollo de Software</h4>
-                                <p>Aplicaciones de escritorio y sistemas personalizados</p>
+        <!-- Testimonios -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Testimonios</div>
+                    <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <blockquote>
+                            "RVR Service transformó completamente nuestra operación digital. La app que desarrollaron 
+                            aumentó nuestras ventas en un 300% en solo 6 meses."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="assets/images/testimonials/maria-rodriguez.jpg" alt="María Rodríguez" loading="lazy">
+                            <div>
+                                <strong>María Rodríguez</strong>
+                                <span>CEO, TechStore RD</span>
                             </div>
-                            <div class="service-item">
-                                <div class="service-icon">📱</div>
-                                <h4>Desarrollo de Apps Móviles</h4>
-                                <p>Aplicaciones nativas e híbridas para iOS y Android</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <blockquote>
+                            "Profesionalismo excepcional. Entregaron nuestro SaaS a tiempo y con una calidad 
+                            que superó todas nuestras expectativas. Altamente recomendados."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="assets/images/testimonials/carlos-mendez.jpg" alt="Carlos Méndez" loading="lazy">
+                            <div>
+                                <strong>Carlos Méndez</strong>
+                                <span>CTO, DataFlow Solutions</span>
                             </div>
-                            <div class="service-item">
-                                <div class="service-icon">🌐</div>
-                                <h4>Desarrollo de Plataformas Web</h4>
-                                <p>Sitios web modernos y aplicaciones web escalables</p>
-                            </div>
-                            <div class="service-item">
-                                <div class="service-icon">🛠️</div>
-                                <h4>Soporte Técnico</h4>
-                                <p>Mantenimiento y soporte para sistemas tecnológicos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <blockquote>
+                            "La app móvil que desarrollaron tiene una UX increíble. Nuestros usuarios la aman 
+                            y tenemos un rating de 4.8 estrellas en las stores."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="assets/images/testimonials/ana-garcia.jpg" alt="Ana García" loading="lazy">
+                            <div>
+                                <strong>Ana García</strong>
+                                <span>Product Manager, FinPay</span>
                             </div>
                         </div>
                     </div>
@@ -163,101 +484,301 @@
             </div>
         </section>
 
-        <!-- Contacto Section -->
-        <section id="contacto" class="contact">
+        <!-- Nosotros Section - Renovated -->
+        <section id="nosotros" class="about-team">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Contacto</h2>
-                    <p class="section-subtitle">Estamos aquí para ayudarte</p>
+                    <div class="section-badge">Nuestro Equipo</div>
+                    <h2 class="section-title">Expertos en Desarrollo de Software</h2>
+                    <p class="section-subtitle">Un equipo multidisciplinario con pasión por la tecnología</p>
                 </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Información de Contacto</h3>
-                        <p>
-                            ¿Tienes un proyecto en mente? No dudes en contactarnos. 
-                            Estaremos encantados de ayudarte a encontrar la mejor solución.
-                        </p>
-                        <div class="contact-items">
-                            <div class="contact-item">
-                                <div class="contact-icon">📧</div>
-                                <div class="contact-details">
-                                    <h4>Correo Electrónico</h4>
-                                    <p>contacto@rvrservice.com</p>
-                                </div>
+                <div class="team-content">
+                    <div class="team-info">
+                        <h3>¿Por Qué Elegirnos?</h3>
+                        <div class="value-proposition">
+                            <div class="value-item">
+                                <div class="value-icon">🎯</div>
+                                <h4>Enfoque en Resultados</h4>
+                                <p>No solo creamos código, creamos soluciones que impulsan tu negocio hacia el éxito medible.</p>
                             </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">📞</div>
-                                <div class="contact-details">
-                                    <h4>Teléfono</h4>
-                                    <p>+1 (809) 757-2575</p>
-                                </div>
+                            <div class="value-item">
+                                <div class="value-icon">⚡</div>
+                                <h4>Tecnologías Modernas</h4>
+                                <p>Utilizamos las últimas tecnologías y mejores prácticas para garantizar soluciones escalables.</p>
                             </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">🕒</div>
-                                <div class="contact-details">
-                                    <h4>Horario de Atención</h4>
-                                    <p>Domingo a Viernes: 8:00 AM - 6:00 PM</p>
-                                </div>
+                            <div class="value-item">
+                                <div class="value-icon">🤝</div>
+                                <h4>Partnership Verdadero</h4>
+                                <p>Te acompañamos más allá del lanzamiento con soporte continuo y evolución del producto.</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">🏆</div>
+                                <h4>Calidad Garantizada</h4>
+                                <p>Procesos de QA rigurosos y garantía de satisfacción en todos nuestros proyectos.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="contact-form">
-                        <h3>Envíanos un Mensaje</h3>
-                        <form class="form" id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Nombre Completo</label>
-                                <input type="text" id="name" name="name" required>
+                    <div class="team-stats-enhanced">
+                        <div class="stat-card">
+                            <div class="stat-icon">💼</div>
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Proyectos Exitosos</div>
+                            <div class="stat-description">Desde startups hasta empresas Fortune 500</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⏱️</div>
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Años de Experiencia</div>
+                            <div class="stat-description">En desarrollo de software empresarial</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🌟</div>
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfacción Cliente</div>
+                            <div class="stat-description">Rating perfecto en todos los proyectos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🚀</div>
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Soporte Técnico</div>
+                            <div class="stat-description">Disponibles cuando nos necesites</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-cta">
+                    <a href="empresa/equipo.html" class="btn btn-secondary">Conocer al Equipo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2>¿Listo para Transformar tu Idea en Realidad?</h2>
+                        <p>Agenda una consulta gratuita de 30 minutos y descubre cómo podemos impulsar tu negocio con tecnología.</p>
+                        <div class="cta-benefits">
+                            <span>✅ Consulta sin compromiso</span>
+                            <span>✅ Análisis técnico gratuito</span>
+                            <span>✅ Propuesta personalizada</span>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#contacto" class="btn btn-primary btn-large">Iniciar Proyecto</a>
+                        <a href="tel:+18097572575" class="btn btn-secondary btn-large">Llamar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section - Enhanced -->
+        <section id="contacto" class="contact-enhanced">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Contacto</div>
+                    <h2 class="section-title">Conversemos Sobre Tu Proyecto</h2>
+                    <p class="section-subtitle">Respuesta garantizada en menos de 24 horas</p>
+                </div>
+                <div class="contact-content-enhanced">
+                    <div class="contact-info-enhanced">
+                        <h3>Múltiples Formas de Conectar</h3>
+                        <p>Elige el método que prefieras para iniciar la conversación sobre tu proyecto.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method primary">
+                                <div class="method-icon">💬</div>
+                                <div class="method-content">
+                                    <h4>WhatsApp Business</h4>
+                                    <p>Respuesta inmediata para consultas rápidas</p>
+                                    <a href="https://wa.me/18097572575?text=Hola%2C%20me%20interesa%20desarrollar%20un%20proyecto%20de%20software" class="method-link" target="_blank">
+                                        +1 (809) 757-2575
+                                    </a>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Correo Electrónico</label>
-                                <input type="email" id="email" name="email" required>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-content">
+                                    <h4>Email Profesional</h4>
+                                    <p>Para consultas detalladas y documentación</p>
+                                    <a href="mailto:contacto@rvrservice.com" class="method-link">
+                                        contacto@rvrservice.com
+                                    </a>
+                                </div>
                             </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📞</div>
+                                <div class="method-content">
+                                    <h4>Llamada Directa</h4>
+                                    <p>Dom-Vie: 8:00 AM - 6:00 PM (GMT-4)</p>
+                                    <a href="tel:+18097572575" class="method-link">
+                                        +1 (809) 757-2575
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📅</div>
+                                <div class="method-content">
+                                    <h4>Reunión Virtual</h4>
+                                    <p>Agenda una videollamada para discutir detalles</p>
+                                    <a href="#" class="method-link schedule-meeting">
+                                        Agendar Reunión
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="response-guarantee">
+                            <div class="guarantee-icon">⚡</div>
+                            <div class="guarantee-text">
+                                <strong>Garantía de Respuesta:</strong><br>
+                                Contestamos todas las consultas en menos de 24 horas
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-enhanced">
+                        <div class="form-header">
+                            <h3>Cuéntanos Sobre Tu Proyecto</h3>
+                            <p>Completa el formulario y te contactaremos con una propuesta personalizada</p>
+                        </div>
+                        
+                        <form class="form enhanced-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nombre Completo *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Empresa</label>
+                                    <input type="text" id="company" name="company" placeholder="Nombre de tu empresa">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Teléfono</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+1 (xxx) xxx-xxxx">
+                                </div>
+                            </div>
+                            
                             <div class="form-group">
-                                <label for="service">Servicio de Interés</label>
-                                <select id="service" name="service" required>
-                                    <option value="">Seleccionar servicio</option>
-                                    <option value="servicios-tecnicos">Servicios Técnicos</option>
-                                    <option value="construccion">Construcción</option>
-                                    <option value="desarrollo-tecnologico">Desarrollo Tecnológico</option>
+                                <label for="project-type">Tipo de Proyecto *</label>
+                                <select id="project-type" name="project-type" required>
+                                    <option value="">Selecciona el tipo de proyecto</option>
+                                    <option value="web-app">Aplicación Web</option>
+                                    <option value="mobile-app">Aplicación Móvil</option>
+                                    <option value="api-backend">API / Backend</option>
+                                    <option value="ecommerce">E-commerce</option>
+                                    <option value="saas">Plataforma SaaS</option>
+                                    <option value="consultoria">Consultoría Técnica</option>
                                     <option value="otro">Otro</option>
                                 </select>
                             </div>
+                            
                             <div class="form-group">
-                                <label for="message">Mensaje</label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                                <label for="budget">Presupuesto Estimado</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Selecciona un rango (opcional)</option>
+                                    <option value="1000-5000">$1,000 - $5,000</option>
+                                    <option value="5000-10000">$5,000 - $10,000</option>
+                                    <option value="10000-25000">$10,000 - $25,000</option>
+                                    <option value="25000-50000">$25,000 - $50,000</option>
+                                    <option value="50000+">$50,000+</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="timeline">Timeline del Proyecto</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">¿Cuándo necesitas el proyecto?</option>
+                                    <option value="urgente">ASAP (< 1 mes)</option>
+                                    <option value="1-3-meses">1-3 meses</option>
+                                    <option value="3-6-meses">3-6 meses</option>
+                                    <option value="6+-meses">6+ meses</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Descripción del Proyecto *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos los detalles de tu proyecto: objetivos, funcionalidades principales, usuarios objetivo, etc."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="how-found">¿Cómo nos encontraste?</label>
+                                <select id="how-found" name="how-found">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="google">Búsqueda en Google</option>
+                                    <option value="referral">Recomendación</option>
+                                    <option value="social-media">Redes Sociales</option>
+                                    <option value="linkedin">LinkedIn</option>
+                                    <option value="github">GitHub</option>
+                                    <option value="otro">Otro</option>
+                                </select>
                             </div>
                             
                             <!-- Privacy Notice Box -->
-                            <div class="privacy-notice">
-                                <p><strong>Protección de Datos:</strong> Sus datos personales serán tratados conforme a nuestra Política de Privacidad. Al enviar este formulario, usted consiente el procesamiento de sus datos para los fines descritos.</p>
+                            <div class="privacy-notice enhanced">
+                                <div class="privacy-icon">🔒</div>
+                                <div class="privacy-content">
+                                    <p><strong>Protección de Datos Garantizada:</strong></p>
+                                    <p>Tus datos están seguros con nosotros. Utilizamos encriptación SSL y cumplimos con todas las regulaciones de privacidad. Solo usaremos tu información para contactarte sobre tu proyecto.</p>
+                                </div>
                             </div>
                             
                             <!-- Privacy Consent -->
-                            <div class="form-group privacy-consent">
+                            <div class="form-group privacy-consent enhanced">
                                 <div class="checkbox-wrapper">
                                     <input type="checkbox" id="privacy-consent" name="privacy-consent" required>
                                     <label for="privacy-consent" class="checkbox-label">
                                         <span class="checkbox-text">
-                                            ✓ He leído y acepto la <a href="privacy-policy.html" target="_blank" class="privacy-link"><strong>Política de Privacidad</strong></a> 
-                                            y consiento el procesamiento de mis datos personales para los fines descritos. <span class="required-asterisk">*</span>
+                                            ✓ Acepto la <a href="privacy-policy.html" target="_blank" class="privacy-link"><strong>Política de Privacidad</strong></a> 
+                                            y consiento el procesamiento de mis datos para la finalidad descrita. <span class="required-asterisk">*</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Marketing Consent -->
+                            <div class="form-group marketing-consent">
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" id="marketing-consent" name="marketing-consent">
+                                    <label for="marketing-consent" class="checkbox-label">
+                                        <span class="checkbox-text">
+                                            📧 Quiero recibir tips de desarrollo y novedades tecnológicas (máximo 1 email por mes)
                                         </span>
                                     </label>
                                 </div>
                             </div>
                             
                             <!-- WhatsApp Consent -->
-                            <div class="form-group whatsapp-consent">
+                            <div class="form-group whatsapp-consent enhanced">
                                 <div class="checkbox-wrapper">
                                     <input type="checkbox" id="whatsapp-consent" name="whatsapp-consent">
                                     <label for="whatsapp-consent" class="checkbox-label">
                                         <span class="checkbox-text">
-                                            📱 Acepto recibir comunicaciones a través de WhatsApp para coordinar servicios y proporcionar soporte técnico. (Opcional)
+                                            📱 Prefiero comunicación por WhatsApp para coordinación rápida del proyecto
                                         </span>
                                     </label>
                                 </div>
                             </div>
                             
-                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                            <button type="submit" class="btn btn-primary btn-large btn-submit">
+                                <span class="btn-text">Enviar Consulta</span>
+                                <span class="btn-icon">🚀</span>
+                            </button>
+                            
+                            <div class="form-footer">
+                                <p>✅ Respuesta garantizada en 24 horas | 🔒 Información 100% confidencial</p>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -265,45 +786,107 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Footer Enhanced -->
+    <footer class="footer enhanced">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>RVR Service</h3>
-                    <p>Soluciones Profesionales Integrales</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-section">
+            <div class="footer-content enhanced">
+                <div class="footer-main">
+                    <div class="footer-logo enhanced">
+                        <h3>RVR Service</h3>
+                        <p class="footer-tagline">Transformando Ideas en Software Exitoso</p>
+                        <div class="footer-contact-quick">
+                            <a href="tel:+18097572575" class="quick-contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span>+1 (809) 757-2575</span>
+                            </a>
+                            <a href="mailto:contacto@rvrservice.com" class="quick-contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>contacto@rvrservice.com</span>
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/rvrservice" target="_blank" aria-label="GitHub">
+                                <span class="social-icon">💻</span>
+                            </a>
+                            <a href="https://linkedin.com/company/rvrservice" target="_blank" aria-label="LinkedIn">
+                                <span class="social-icon">💼</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-services">
                         <h4>Servicios</h4>
                         <ul>
-                            <li><a href="#servicios">Servicios Técnicos</a></li>
-                            <li><a href="#servicios">Construcción</a></li>
-                            <li><a href="#servicios">Desarrollo Tecnológico</a></li>
+                            <li><a href="servicios/desarrollo-web.html">Desarrollo Web</a></li>
+                            <li><a href="servicios/desarrollo-mobile.html">Apps Móviles</a></li>
+                            <li><a href="servicios/api-backend.html">APIs & Backend</a></li>
+                            <li><a href="servicios/consultoria.html">Consultoría Tech</a></li>
+                            <li><a href="portfolio/index.html">Ver Portfolio</a></li>
                         </ul>
                     </div>
-                    <div class="footer-section">
+                    
+                    <div class="footer-technologies">
+                        <h4>Tecnologías</h4>
+                        <div class="tech-list">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <a href="empresa/tecnologias.html" class="tech-link">Ver todas →</a>
+                    </div>
+                    
+                    <div class="footer-company">
                         <h4>Empresa</h4>
                         <ul>
-                            <li><a href="#nosotros">Sobre Nosotros</a></li>
-                            <li><a href="#contacto">Contacto</a></li>
-                            <li><a href="privacy-policy.html">Política de Privacidad</a></li>
+                            <li><a href="empresa/equipo.html">Nuestro Equipo</a></li>
+                            <li><a href="empresa/proceso.html">Proceso de Desarrollo</a></li>
+                            <li><a href="recursos/blog.html">Blog Técnico</a></li>
+                            <li><a href="empresa/valores.html">Valores y Cultura</a></li>
+                            <li><a href="empresa/careers.html">Únete al Equipo</a></li>
                         </ul>
                     </div>
                 </div>
+                
+                <div class="footer-newsletter">
+                    <h4>📧 Newsletter Técnico</h4>
+                    <p>Recibe tips de desarrollo y las últimas tendencias tech (máximo 1 email/mes)</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="tu@email.com" required>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 RVR Service. Todos los derechos reservados.</p>
-                <p class="privacy-footer-link">
-                    <a href="privacy-policy.html" class="footer-privacy-link">📋 Ver Política de Privacidad</a> | 
-                    <a href="#contacto" class="footer-privacy-link">📞 Contacto</a>
-                </p>
+            
+            <div class="footer-bottom enhanced">
+                <div class="footer-legal">
+                    <p>&copy; 2024 RVR Service. Todos los derechos reservados.</p>
+                    <div class="footer-legal-links">
+                        <a href="privacy-policy.html" class="footer-privacy-link">Política de Privacidad</a>
+                        <a href="legal/terminos.html" class="footer-privacy-link">Términos de Servicio</a>
+                        <a href="legal/cookies.html" class="footer-privacy-link">Política de Cookies</a>
+                    </div>
+                </div>
+                <div class="footer-location">
+                    <span class="location-icon">📍</span>
+                    <span>Santo Domingo, República Dominicana</span>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/18097572575?text=Hola%2C%20me%20interesa%20un%20proyecto%20de%20desarrollo%20de%20software" target="_blank" class="whatsapp-btn">
+            <span class="whatsapp-icon">💬</span>
+            <span class="whatsapp-text">¡Hablemos!</span>
+        </a>
+    </div>
+
     <script>
-        // Mobile menu functionality
+        // Enhanced Mobile menu functionality
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
 
@@ -318,62 +901,94 @@
             navMenu.classList.remove('active');
         }));
 
+        // Dropdown menu functionality
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', () => {
+                dropdown.querySelector('.dropdown-menu').style.display = 'block';
+            });
+            dropdown.addEventListener('mouseleave', () => {
+                dropdown.querySelector('.dropdown-menu').style.display = 'none';
+            });
+        });
+
         // Privacy Banner functionality
         const privacyBanner = document.getElementById('privacy-banner');
         const closeBannerBtn = document.getElementById('close-privacy-banner');
 
-        // Show banner after 2 seconds if not previously closed
         setTimeout(() => {
             if (!localStorage.getItem('privacy-banner-closed')) {
                 privacyBanner.classList.add('show');
             }
-        }, 2000);
+        }, 3000);
 
-        // Close banner functionality
         closeBannerBtn.addEventListener('click', () => {
             privacyBanner.classList.remove('show');
             localStorage.setItem('privacy-banner-closed', 'true');
         });
 
-        // Form validation with privacy consent
+        // Enhanced form validation
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            const privacyConsent = document.getElementById('privacy-consent');
+            e.preventDefault();
             
+            const privacyConsent = document.getElementById('privacy-consent');
+            const projectType = document.getElementById('project-type');
+            const message = document.getElementById('message');
+            
+            // Validations
             if (!privacyConsent.checked) {
-                e.preventDefault();
-                alert('❌ Debe aceptar la Política de Privacidad para continuar.');
-                // Scroll to privacy consent
+                alert('❌ Debes aceptar la Política de Privacidad para continuar.');
                 privacyConsent.closest('.privacy-consent').scrollIntoView({
                     behavior: 'smooth',
                     block: 'center'
                 });
-                // Highlight the privacy consent section
-                privacyConsent.closest('.privacy-consent').style.border = '3px solid #dc3545';
-                setTimeout(() => {
-                    privacyConsent.closest('.privacy-consent').style.border = '2px solid var(--primary-color)';
-                }, 3000);
                 return false;
             }
             
-            // Get WhatsApp consent status
-            const whatsappConsent = document.getElementById('whatsapp-consent').checked;
-            
-            // Here you would typically send the form data to your server
-            // For now, we'll just show a success message
-            e.preventDefault();
-            
-            let message = '✅ ¡Mensaje enviado exitosamente! Nos pondremos en contacto contigo pronto.';
-            if (whatsappConsent) {
-                message += '\n📱 También te contactaremos por WhatsApp según tu preferencia.';
+            if (!projectType.value) {
+                alert('❌ Por favor selecciona el tipo de proyecto.');
+                projectType.focus();
+                return false;
             }
             
-            alert(message);
+            if (message.value.length < 20) {
+                alert('❌ Por favor proporciona más detalles sobre tu proyecto (mínimo 20 caracteres).');
+                message.focus();
+                return false;
+            }
+            
+            // Get form data
+            const formData = new FormData(this);
+            const whatsappConsent = document.getElementById('whatsapp-consent').checked;
+            const marketingConsent = document.getElementById('marketing-consent').checked;
+            
+            // Show success message
+            let successMessage = '✅ ¡Consulta enviada exitosamente!\n\n';
+            successMessage += '📧 Te contactaremos en menos de 24 horas con una propuesta personalizada.\n\n';
+            
+            if (whatsappConsent) {
+                successMessage += '📱 También te escribiremos por WhatsApp para coordinar más rápido.\n\n';
+            }
+            
+            if (marketingConsent) {
+                successMessage += '📬 Te has suscrito a nuestro newsletter técnico.\n\n';
+            }
+            
+            successMessage += '🚀 ¡Gracias por confiar en RVR Service!';
+            
+            alert(successMessage);
             
             // Reset form
             this.reset();
         });
 
-        // Smooth scrolling for navigation links
+        // Newsletter form
+        document.getElementById('newsletterForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ ¡Te has suscrito al newsletter técnico! Recibirás contenido valioso máximo 1 vez por mes.');
+            this.reset();
+        });
+
+        // Smooth scrolling enhancement
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -387,27 +1002,80 @@
             });
         });
 
-        // Highlight privacy policy links on hover
-        document.querySelectorAll('.privacy-link').forEach(link => {
-            link.addEventListener('mouseenter', function() {
-                this.style.background = 'var(--primary-color)';
-                this.style.color = 'white';
-                this.style.padding = '2px 6px';
-                this.style.borderRadius = '4px';
+        // Schedule meeting functionality
+        document.querySelector('.schedule-meeting')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('📅 Funcionalidad de agendamiento en desarrollo.\n\nPor ahora, contáctanos por WhatsApp o email para coordinar una reunión.');
+        });
+
+        // Portfolio filter animation (placeholder)
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
             });
             
-            link.addEventListener('mouseleave', function() {
-                this.style.background = 'transparent';
-                this.style.color = 'var(--primary-color)';
-                this.style.padding = '0';
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
             });
+        });
+
+        // Floating elements animation
+        function animateFloatingElements() {
+            const elements = document.querySelectorAll('.element');
+            elements.forEach((element, index) => {
+                setInterval(() => {
+                    element.style.transform = `translateY(${Math.sin(Date.now() * 0.001 + index) * 10}px)`;
+                }, 50);
+            });
+        }
+
+        // Initialize animations on load
+        window.addEventListener('load', () => {
+            animateFloatingElements();
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'var(--secondary-color)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Form field enhancements
+        document.querySelectorAll('input, select, textarea').forEach(field => {
+            field.addEventListener('focus', function() {
+                this.closest('.form-group').style.transform = 'scale(1.02)';
+            });
+            
+            field.addEventListener('blur', function() {
+                this.closest('.form-group').style.transform = 'scale(1)';
+            });
+        });
+
+        // Budget calculator hint
+        document.getElementById('project-type')?.addEventListener('change', function() {
+            const budgetField = document.getElementById('budget');
+            const projectType = this.value;
+            
+            // Simple budget suggestions based on project type
+            const suggestions = {
+                'web-app': 'Sugerido: $5,000 - $25,000',
+                'mobile-app': 'Sugerido: $10,000 - $50,000',
+                'api-backend': 'Sugerido: $3,000 - $15,000',
+                'ecommerce': 'Sugerido: $8,000 - $30,000',
+                'saas': 'Sugerido: $15,000+',
+                'consultoria': 'Sugerido: $150/hora'
+            };
+            
+            if (suggestions[projectType]) {
+                budgetField.title = suggestions[projectType];
+            }
         });
     </script>
 </body>
-</html>uestra Misión</h3>
-                        <p>
-                            Proporcionar servicios de la más alta calidad con un enfoque profesional, 
-                            utilizando las mejores prácticas y tecnologías disponibles para garantizar 
-                            la satisfacción total de nuestros clientes.
-                        </p>
-                        <h3>N
+</html>
